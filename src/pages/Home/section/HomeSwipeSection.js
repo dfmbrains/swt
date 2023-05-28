@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import ScrollContainer from "react-indiana-drag-scroll";
 import {styled, useMediaQuery, useTheme} from "@mui/material";
-import SwipeImg1 from '../../../assets/imgs/swipeImg1.png';
+import SwipeImg1 from '../../../assets/imgs/swipeImg1.webp';
 import {StyledSection} from "../../../components/StyledComponents";
 
 const StyledRow = styled(ScrollContainer)(({theme}) => ({

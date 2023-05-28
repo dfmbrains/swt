@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyledSection} from "../../../components/StyledComponents";
 import {Box, Grid, styled, Typography} from "@mui/material";
-import Img from '../../../assets/imgs/product.png'
+import Img from '../../../assets/imgs/product.webp'
 
 const StyledBox = styled('div')(({theme}) => ({
    position: "relative",

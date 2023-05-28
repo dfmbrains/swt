@@ -1,6 +1,6 @@
 import React from 'react';
 import {styled, Typography} from "@mui/material";
-import PromoBg from '../../../assets/imgs/promo-bg.png'
+import PromoBg from '../../../assets/imgs/promo-bg.webp'
 
 const StyledSection = styled('section')(() => ({
    padding: '110px 0',

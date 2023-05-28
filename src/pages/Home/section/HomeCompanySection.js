@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyledSection} from "../../../components/StyledComponents";
 import {Grid, styled, Typography} from "@mui/material";
-import CompanyImg from '../../../assets/imgs/company.png'
+import CompanyImg from '../../../assets/imgs/company.webp'
 
 const StyledBox = styled('div')(({theme}) => ({
    height: "400px",

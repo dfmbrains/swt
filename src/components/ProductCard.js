@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductImg from '../assets/imgs/product.png'
+import ProductImg from '../assets/imgs/product.webp'
 import {styled, Typography} from "@mui/material";
 
 const StyledCard = styled('div')(({theme}) => ({

@@ -5,7 +5,8 @@ const StyledSection = styled('section')(({theme}) => ({
 
    "& .title": {
       textTransform: "uppercase",
-      marginBottom: "24px"
+      marginBottom: "24px",
+      fontWeight: "900"
    },
 
    [theme.breakpoints.down("lg")]: {

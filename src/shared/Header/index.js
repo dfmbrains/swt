@@ -90,7 +90,7 @@ const Header = () => {
                                 <Typography variant={"subtitle1"}>About us</Typography>
                              </NavLink>
                              <NavLink className="item" to={"/product"}>
-                                <Typography variant={"subtitle1"}>Product</Typography>
+                                <Typography variant={"subtitle1"}>Products</Typography>
                              </NavLink>
                              <NavLink className="item" to={"/service"}>
                                 <Typography variant={"subtitle1"}>Service</Typography>
@@ -102,7 +102,7 @@ const Header = () => {
                           <StyledSearchTextField
                               fullWidth
                               type="text"
-                              name="name"
+                              name="search"
                               label="Search"
                               size={"small"}
                               variant={"standard"}

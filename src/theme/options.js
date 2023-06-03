@@ -15,6 +15,7 @@ export const themeOptions = (theme) => {
             fontSize: 55,
             color: "#FFFFFF",
             fontWeight: "700",
+            lineHeight: 1.2,
 
             [theme.breakpoints.down("lg")]: {fontSize: 48},
             [theme.breakpoints.down("md")]: {fontSize: 42},
@@ -25,6 +26,7 @@ export const themeOptions = (theme) => {
             fontSize: 36,
             color: "#1B1B1B",
             fontWeight: "700",
+            lineHeight: 1.2,
 
             [theme.breakpoints.down("lg")]: {fontSize: 32},
             [theme.breakpoints.down("md")]: {fontSize: 28},
@@ -34,6 +36,7 @@ export const themeOptions = (theme) => {
          h3: {
             fontSize: 24,
             fontWeight: "700",
+            lineHeight: 1.2,
 
             [theme.breakpoints.down("lg")]: {fontSize: 21},
             [theme.breakpoints.down("md")]: {fontSize: 20},
@@ -43,6 +46,7 @@ export const themeOptions = (theme) => {
          h4: {
             fontSize: 20,
             fontWeight: "500",
+            lineHeight: 1.2,
 
             [theme.breakpoints.down("lg")]: {fontSize: 19},
             [theme.breakpoints.down("md")]: {fontSize: 18},
@@ -51,6 +55,8 @@ export const themeOptions = (theme) => {
          },
          h5: {
             fontSize: 18,
+            fontWeight: "500",
+            lineHeight: 1.2,
 
             [theme.breakpoints.down("lg")]: {fontSize: 17},
             [theme.breakpoints.down("md")]: {fontSize: 16},
@@ -67,6 +73,7 @@ export const themeOptions = (theme) => {
          },
          subtitle2: {
             fontSize: 15,
+            lineHeight: 1.2,
 
             [theme.breakpoints.down("md")]: {fontSize: 14},
             [theme.breakpoints.down("sm")]: {fontSize: 13}
@@ -74,12 +81,14 @@ export const themeOptions = (theme) => {
          body1: {
             fontSize: 14,
             fontWeight: "500",
+            lineHeight: 1.2,
 
             [theme.breakpoints.down("md")]: {fontSize: 13},
             [theme.breakpoints.down("sm")]: {fontSize: 12, fontWeight: "400"}
          },
          body2: {
             fontSize: 12,
+            lineHeight: 1.2,
 
             [theme.breakpoints.down("md")]: {fontSize: 12},
             [theme.breakpoints.down("sm")]: {fontSize: 11}

@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import ScrollContainer from "react-indiana-drag-scroll";
-import {styled, useMediaQuery, useTheme} from "@mui/material";
+import {styled, Typography, useMediaQuery, useTheme} from "@mui/material";
 import SwipeImg1 from '../../../assets/imgs/swipeImg1.webp';
 import {StyledSection} from "../../../components/StyledComponents";
 
@@ -55,6 +55,10 @@ const HomeSwipeSection = () => {
 
    return (
        <StyledSection>
+          <div className="container">
+             <Typography className="title" variant={"h3"}>Our storage</Typography>
+          </div>
+
           <StyledRow ref={rowRef} className="messagesModal__menu" horizontal={true} vertical={false}>
              <img src={SwipeImg1} alt="img"/>
              <img src={SwipeImg1} alt="img"/>

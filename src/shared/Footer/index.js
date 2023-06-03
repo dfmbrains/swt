@@ -100,7 +100,7 @@ const Footer = () => {
                          <Typography variant={"subtitle1"}>About us</Typography>
                       </Link>
                       <Link className={"item"} to={"/"}>
-                         <Typography variant={"subtitle1"}>Product</Typography>
+                         <Typography variant={"subtitle1"}>Products</Typography>
                       </Link>
                       <Link className={"item"} to={"/"}>
                          <Typography variant={"subtitle1"}>Service</Typography>

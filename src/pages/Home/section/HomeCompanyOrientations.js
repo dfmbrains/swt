@@ -1,19 +1,19 @@
 import React from 'react';
 import {StyledSection} from "../../../components/StyledComponents";
 import {Grid, Typography} from "@mui/material";
-import ProductTypeCard from "../../../components/ProductTypeCard";
-import {productTypes} from "../../../data/productTypes";
+import CompanyOrientationCard from "../../../components/CompanyOrientationCard";
+import {companyOrientations} from "../../../data/companyOrientations";
 
-const HomeProducts = () => {
+const HomeCompanyOrientations = () => {
    return (
        <StyledSection>
           <div className="container">
-             <Typography className="title" variant={"h3"}>Products</Typography>
+             <Typography className="title" variant={"h3"}>Company Orientations</Typography>
 
              <Grid container spacing={2}>
-                {productTypes.map((item, idx) => (
+                {companyOrientations.map((item, idx) => (
                     <Grid key={idx} item lg={3} md={4} sm={6} xs={12}>
-                       <ProductTypeCard productType={item}/>
+                       <CompanyOrientationCard orientation={item}/>
                     </Grid>
                 ))}
              </Grid>
@@ -22,4 +22,4 @@ const HomeProducts = () => {
    );
 };
 
-export default HomeProducts;
+export default HomeCompanyOrientations;

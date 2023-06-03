@@ -1,5 +1,4 @@
 import React from 'react';
-import ProductImg from '../assets/imgs/product.webp'
 import {styled, Typography} from "@mui/material";
 
 const StyledCard = styled('div')(({theme}) => ({
@@ -14,7 +13,7 @@ const StyledCard = styled('div')(({theme}) => ({
       boxShadow: "0px 43px 80px rgba(0, 0, 0, 0.04), 0px 17.9644px 33.4221px rgba(0, 0, 0, 0.0287542), 0px 9.60461px 17.869px rgba(0, 0, 0, 0.0238443), 0px 5.38427px 10.0172px rgba(0, 0, 0, 0.02), 0px 2.85954px 5.32008px rgba(0, 0, 0, 0.0161557), 0px 1.18992px 2.21381px rgba(0, 0, 0, 0.0112458)"
    },
 
-   "& .productCardTitle": {
+   "& .productTypeCardTitle": {
       marginTop: "16px"
    },
    "& img": {
@@ -30,13 +29,13 @@ const StyledCard = styled('div')(({theme}) => ({
    }
 }));
 
-const ProductCard = () => {
+const ProductTypeCard = ({productType}) => {
    return (
-       <StyledCard className="productCard">
-          <img src={ProductImg} alt="product"/>
-          <Typography className="productCardTitle" variant={"h4"}>Ceramic Capacitor</Typography>
+       <StyledCard>
+          <img src={productType.img} alt={productType.title.ru}/>
+          <Typography className="productTypeCardTitle" variant={"h5"}>{productType.title.ru}</Typography>
        </StyledCard>
    );
 };
 
-export default ProductCard;
+export default ProductTypeCard;

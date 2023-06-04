@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyledSection} from "../../../components/StyledComponents";
+import {StyledSection} from "./StyledComponents";
 import {Grid, Icon, styled, Typography} from "@mui/material";
 
 const StyledBox = styled(StyledSection)(() => ({
@@ -23,7 +23,7 @@ const StyledCard = styled('div')(() => ({
    }
 }));
 
-const HomeOurBenefits = () => {
+const BenefitsSection = () => {
    const data = [
       {
          title: 'Большой ассортимент стока',
@@ -79,4 +79,4 @@ const HomeOurBenefits = () => {
    );
 };
 
-export default HomeOurBenefits;
+export default BenefitsSection;

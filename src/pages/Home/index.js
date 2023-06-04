@@ -4,7 +4,7 @@ import HomeProducts from "./section/HomeProducts";
 import HomeSwipeSection from "./section/HomeSwipeSection";
 import HomeCompanyOrientations from "./section/HomeCompanyOrientations";
 import HomeWhyChooseUs from "./section/HomeWhyChooseUs";
-import HomeOurBenefits from "./section/HomeOurBenefits";
+import BenefitsSection from "../../components/BenefitsSection";
 import FormSection from "../../components/FormSection";
 
 const Home = () => {
@@ -15,7 +15,7 @@ const Home = () => {
           <HomeWhyChooseUs/>
           <HomeCompanyOrientations/>
           <HomeSwipeSection/>
-          <HomeOurBenefits/>
+          <BenefitsSection/>
           <FormSection/>
        </>
    );

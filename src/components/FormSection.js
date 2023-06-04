@@ -3,6 +3,7 @@ import {StyledSection} from "./StyledComponents";
 import {Button, styled, TextField, Typography} from "@mui/material";
 
 const StyledBox = styled(StyledSection)(() => ({
+   margin: "30px 0 0",
    padding: "70px 0",
    background: "#F7F7F7",
 

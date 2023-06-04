@@ -1,9 +1,9 @@
 import React from 'react';
-import HomePromoSection from "./section/HomePromoSection";
-import HomeProducts from "./section/HomeProducts";
-import HomeSwipeSection from "./section/HomeSwipeSection";
-import HomeCompanyOrientations from "./section/HomeCompanyOrientations";
-import HomeWhyChooseUs from "./section/HomeWhyChooseUs";
+import HomePromoSection from "./sections/HomePromoSection";
+import HomeProducts from "./sections/HomeProducts";
+import HomeSwipeSection from "./sections/HomeSwipeSection";
+import HomeCompanyOrientations from "./sections/HomeCompanyOrientations";
+import HomeWhyChooseUs from "./sections/HomeWhyChooseUs";
 import BenefitsSection from "../../components/BenefitsSection";
 import FormSection from "../../components/FormSection";
 

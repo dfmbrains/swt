@@ -24,6 +24,8 @@ const StyledCard = styled('div')(({theme}) => ({
    "& .companyOrientationCardSubtitle": {
       marginTop: "16px",
       height: "54px",
+      color: "#737373",
+      fontWeight: 400,
 
       "&::first-letter": {
          textTransform: "uppercase"

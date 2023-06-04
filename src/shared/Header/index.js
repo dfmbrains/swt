@@ -92,8 +92,8 @@ const Header = () => {
                              <NavLink className="item" to={"/product"}>
                                 <Typography variant={"subtitle1"}>Products</Typography>
                              </NavLink>
-                             <NavLink className="item" to={"/service"}>
-                                <Typography variant={"subtitle1"}>Service</Typography>
+                             <NavLink className="item" to={"/services"}>
+                                <Typography variant={"subtitle1"}>Services</Typography>
                              </NavLink>
                              <NavLink className="item" to={"/contact"}>
                                 <Typography variant={"subtitle1"}>Contact</Typography>

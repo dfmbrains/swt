@@ -16,7 +16,8 @@ const StyledCard = styled('div')(() => ({
    },
    "& h6": {
       marginBottom: "10px",
-      fontWeight: "400"
+      fontWeight: "400",
+      color: "#737373"
    },
    "& .icon": {
       fontSize: 36
@@ -66,7 +67,7 @@ const BenefitsSection = () => {
                 {data.map((el, idx) => (
                     <Grid key={idx} item xs={4}>
                        <StyledCard>
-                          <Icon className={"icon"}>{el.icon}</Icon>
+                          <Icon color={"primary"} className={"icon"}>{el.icon}</Icon>
 
                           <Typography className="cardTitle" variant={"h4"}>{el.title}</Typography>
                           <Typography className="cardSubtitle" variant={"subtitle2"}>{el.subtitle}</Typography>

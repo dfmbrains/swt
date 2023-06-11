@@ -3,6 +3,7 @@ import ScrollContainer from "react-indiana-drag-scroll";
 import {styled, Typography, useMediaQuery, useTheme} from "@mui/material";
 import SwipeImg1 from '../../../assets/imgs/swipeImg1.webp';
 import {StyledSection} from "../../../components/StyledComponents";
+import {useTranslation} from "react-i18next";
 
 const StyledRow = styled(ScrollContainer)(({theme}) => ({
    display: "flex",
@@ -40,6 +41,8 @@ const StyledRow = styled(ScrollContainer)(({theme}) => ({
 
 const HomeSwipeSection = () => {
    const theme = useTheme()
+   const {t} = useTranslation()
+
    const rowRef = useRef(null);
 
    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
@@ -56,7 +59,7 @@ const HomeSwipeSection = () => {
    return (
        <StyledSection>
           <div className="container">
-             <Typography className="title" variant={"h3"}>Our storage</Typography>
+             <Typography className="title" variant={"h3"}>{t('sections.ourStorage')}</Typography>
           </div>
 
           <StyledRow ref={rowRef} className="messagesModal__menu" horizontal={true} vertical={false}>

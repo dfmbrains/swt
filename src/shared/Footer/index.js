@@ -1,8 +1,9 @@
 import React from 'react';
-import {styled, Typography, useTheme} from "@mui/material";
+import {Button, Icon, styled, Typography, useTheme} from "@mui/material";
 import LogoCompany from "../../assets/brand/logo-company-white.svg";
 import {FlexBetweenAlignStart, FlexBox, FlexGap10} from "../../components/FlexBoxes";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 const StyledFooter = styled('footer')(({theme}) => ({
    padding: '24px 0',
@@ -67,17 +68,22 @@ const StyledFlexBox = styled(FlexBox)(({theme}) => ({
 }));
 
 const StyledContactBox = styled('div')(({theme}) => ({
-   [theme.breakpoints.down("sm")]: {
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      width: "100%",
-      rowGap: "8px"
-   }
+   "& .MuiTypography-root": {
+      textTransform: "lowercase"
+   },
+   "& .MuiButtonBase-root": {
+      justifyContent: "flex-start"
+   },
+
+   display: "flex",
+   flexDirection: "column",
+   width: "100%",
+   rowGap: "8px"
 }));
 
 const Footer = () => {
    const theme = useTheme()
+   const {t} = useTranslation()
 
    return (
        <StyledFooter>
@@ -94,35 +100,29 @@ const Footer = () => {
                 <StyledFlexBox>
                    <StyledMenu>
                       <Link className={"item"} to={"/"}>
-                         <Typography variant={"subtitle1"}>Home</Typography>
+                         <Typography variant={"subtitle1"}>{t('menu.home')}</Typography>
                       </Link>
                       <Link className={"item"} to={"/"}>
-                         <Typography variant={"subtitle1"}>About us</Typography>
+                         <Typography variant={"subtitle1"}>{t('menu.aboutUs')}</Typography>
                       </Link>
                       <Link className={"item"} to={"/"}>
-                         <Typography variant={"subtitle1"}>Products</Typography>
+                         <Typography variant={"subtitle1"}>{t('menu.products')}</Typography>
                       </Link>
                       <Link className={"item"} to={"/"}>
-                         <Typography variant={"subtitle1"}>Service</Typography>
+                         <Typography variant={"subtitle1"}>{t('menu.services')}</Typography>
                       </Link>
                       <Link className={"item"} to={"/"}>
-                         <Typography variant={"subtitle1"}>Contact</Typography>
+                         <Typography variant={"subtitle1"}>{t('menu.contacts')}</Typography>
                       </Link>
                    </StyledMenu>
 
                    <StyledContactBox>
-                      <FlexGap10 className={"contactGap"}>
-                         <Typography>Tel:</Typography>
-                         <a href="tel:86-755-2216-0508">
-                            <Typography>86-755-2216-0508</Typography>
-                         </a>
-                      </FlexGap10>
-                      <FlexGap10 className={"contactGap"}>
-                         <Typography>Email:</Typography>
-                         <a href="mailto:admin@LoremIpsum.com">
-                            <Typography>admin@LoremIpsum.com</Typography>
-                         </a>
-                      </FlexGap10>
+                      <Button color={"info"} href="tel:+8618521372646" startIcon={<Icon>phone</Icon>}>
+                         <Typography>+8618521372646</Typography>
+                      </Button>
+                      <Button color={"info"} href="mailto:info@wiswealth.com" startIcon={<Icon>email</Icon>}>
+                         <Typography>info@wiswealth.com</Typography>
+                      </Button>
                    </StyledContactBox>
                 </StyledFlexBox>
              </FlexBetweenAlignStart>
@@ -133,7 +133,8 @@ const Footer = () => {
                    textAlign: "center"
                 }
              }}>
-                Copyright © {new Date().getFullYear()} Shanghai Wiswealth Technology Co. Ltd . All Rights Reserved.
+                Copyright © {new Date().getFullYear()} Shanghai Wiswealth Technology Co. Ltd
+                . {t('footer.allRightsReserved')}
              </Typography>
           </div>
        </StyledFooter>

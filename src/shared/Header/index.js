@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+   Button,
    Icon,
    IconButton,
    InputAdornment,
@@ -12,6 +13,8 @@ import {
 import {Link, NavLink} from "react-router-dom";
 import LogoCompany from '../../assets/brand/logo-company.svg'
 import {FlexBetweenAlignCenter, FlexBox} from "../../components/FlexBoxes";
+import {useTranslation} from "react-i18next";
+import i18next from "i18next";
 
 const StyledHeader = styled('header')(({theme}) => ({
    padding: '24px 0',
@@ -68,6 +71,7 @@ const StyledSearchTextField = styled(TextField)(({theme}) => ({
 }));
 
 const Header = () => {
+   const {t} = useTranslation()
    const theme = useTheme()
 
    const isLaptop = useMediaQuery(theme.breakpoints.up("md"));
@@ -84,26 +88,26 @@ const Header = () => {
                        <>
                           <StyledMenu>
                              <NavLink className="item" to={"/"}>
-                                <Typography variant={"subtitle1"}>Home</Typography>
+                                <Typography variant={"subtitle1"}>{t('menu.home')}</Typography>
                              </NavLink>
                              <NavLink className="item" to={"/about"}>
-                                <Typography variant={"subtitle1"}>About us</Typography>
+                                <Typography variant={"subtitle1"}>{t('menu.aboutUs')}</Typography>
                              </NavLink>
                              <NavLink className="item" to={"/product"}>
-                                <Typography variant={"subtitle1"}>Products</Typography>
+                                <Typography variant={"subtitle1"}>{t('menu.products')}</Typography>
                              </NavLink>
                              <NavLink className="item" to={"/services"}>
-                                <Typography variant={"subtitle1"}>Services</Typography>
+                                <Typography variant={"subtitle1"}>{t('menu.services')}</Typography>
                              </NavLink>
                              <NavLink className="item" to={"/contact"}>
-                                <Typography variant={"subtitle1"}>Contact</Typography>
+                                <Typography variant={"subtitle1"}>{t('menu.contacts')}</Typography>
                              </NavLink>
                           </StyledMenu>
                           <StyledSearchTextField
                               fullWidth
                               type="text"
                               name="search"
-                              label="Search"
+                              label={t('placeholders.search')}
                               size={"small"}
                               variant={"standard"}
                               InputProps={{
@@ -111,6 +115,11 @@ const Header = () => {
                                      color={"primary"}>search</Icon></InputAdornment>,
                               }}
                           />
+                          <Button onClick={() => i18next.changeLanguage(t('currentLanguage') === 'ru' ? 'en' : 'ru')}
+                                  variant={"text"} color={"secondary"} size={isLaptop ? "small" : 'medium'}
+                                  startIcon={<Icon>language</Icon>}>
+                             <Typography variant="subtitle2">{t('currentLanguage').toUpperCase()}</Typography>
+                          </Button>
                        </>
                    ) : (
                        <IconButton color={"primary"}>

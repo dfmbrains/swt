@@ -2,6 +2,7 @@ import React from 'react';
 import {StyledSection} from "../../../components/StyledComponents";
 import {Grid, styled, Typography} from "@mui/material";
 import CompanyImg from '../../../assets/imgs/company.webp'
+import {useTranslation} from "react-i18next";
 
 const StyledImgBox = styled('div')(({theme}) => ({
    height: "420px",
@@ -16,10 +17,14 @@ const StyledImgBox = styled('div')(({theme}) => ({
 }));
 
 const AboutSection1 = () => {
+   const tRootKey = 'about'
+
+   const {t} = useTranslation()
+
    return (
        <StyledSection>
           <div className="container">
-             <Typography className={"title"} variant={"h3"}>About us</Typography>
+             <Typography className={"title"} variant={"h3"}>{t('sections.aboutUs')}</Typography>
 
              <Grid container spacing={6}>
                 <Grid item xs={6}>
@@ -28,12 +33,8 @@ const AboutSection1 = () => {
                    </StyledImgBox>
                 </Grid>
                 <Grid item xs={6}>
-                   <Typography variant={"subtitle1"}>Shanghai Wiswealth Technology Co., Ltd - основанная в 2000 году,
-                      специализируется на дистрибуции электронных компонентов всемирно известных брендов. Наша компания
-                      занимается оригинальной дистрибуцией, а также предоставляет решения для цепочки поставок
-                      электронных компонентов за счет снижения затрат, включая долгосрочные запасы пассивных
-                      компонентов, быструю доставку недостающих компонентов в течение 3 дней, отгрузку на складе,
-                      спецификацию и поставку в небольших количествах</Typography>
+                   <Typography sx={{textAlign: "justify", textIndent: "20px", lineHeight: 1.3}} className={"aboutText"} mb={1} variant={"subtitle1"}>{t(`${tRootKey}.text.part1`)}</Typography>
+                   <Typography sx={{textAlign: "justify", textIndent: "20px", lineHeight: 1.3}} className={"aboutText"} variant={"subtitle1"}>{t(`${tRootKey}.text.part2`)}</Typography>
                 </Grid>
              </Grid>
           </div>

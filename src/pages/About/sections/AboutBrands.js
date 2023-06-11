@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyledSection} from "../../../components/StyledComponents";
 import {Grid, styled, Typography} from "@mui/material";
+import {useTranslation} from "react-i18next";
 
 const StyledImg = styled('img')(() => ({
    height: "200px",
@@ -11,10 +12,13 @@ const StyledImg = styled('img')(() => ({
 }));
 
 const AboutBrands = () => {
+   const {t} = useTranslation()
+
    return (
        <StyledSection>
           <div className="container">
-             <Typography className="title" variant={"h3"}>Brands</Typography>
+             <Typography className="title" variant={"h3"}>{t('sections.brands')}</Typography>
+             <Typography mb={4} variant={"subtitle2"}>{t('about.partners')}</Typography>
 
              <Grid container columnSpacing={10}>
                 <Grid item xs={4}>

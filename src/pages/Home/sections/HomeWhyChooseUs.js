@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyledSection} from "../../../components/StyledComponents";
 import {styled, Typography} from "@mui/material";
+import {useTranslation} from "react-i18next";
 
 const StyledBox = styled(StyledSection)(({theme}) => ({
    background: theme.palette.primary.main,
@@ -21,17 +22,18 @@ const StyledBox = styled(StyledSection)(({theme}) => ({
 }));
 
 const HomeWhyChooseUs = () => {
+   const {t} = useTranslation()
+
+   const data = t('whyUsSection', {returnObjects: true})
+
    return (
        <StyledBox>
           <div className="container">
-             <Typography className="title" variant={"h2"}>Why Us?</Typography>
+             <Typography className="title" variant={"h2"}>{t('sections.whyUs')}</Typography>
 
-             <Typography variant={"subtitle1"}>Товар в наличии более 100000 элементов</Typography>
-             <Typography variant={"subtitle1"}>Гарантия 1.5 года (18 месяцев)</Typography>
-             <Typography variant={"subtitle1"}>Доверие в сотрудничестве в первую очередь. Сотрудничество без обмана и
-                лжи</Typography>
-             <Typography variant={"subtitle1"}>100% оригинальные компоненты, поставка в течение 2-х дней после
-                оплаты</Typography>
+             {data && data.map((el, idx) => (
+                 <Typography key={idx} variant={"subtitle1"}>{el}</Typography>
+             ))}
           </div>
        </StyledBox>
    );

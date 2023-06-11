@@ -1,10 +1,12 @@
 import React from 'react';
 import {StyledSection} from "../../../components/StyledComponents";
 import {Grid, Icon, styled, Typography} from "@mui/material";
+import {useTranslation} from "react-i18next";
 
 const StyledCard = styled('div')(() => ({
    padding: "32px",
    boxShadow: "0px 13px 19px rgba(0, 0, 0, 0.07)",
+   height: "100%",
 
    "& .icon": {
       fontSize: 42
@@ -18,52 +20,29 @@ const StyledCard = styled('div')(() => ({
    "& .cardSubtitle": {
       color: "#737373",
       fontWeight: "400",
-      height: 36
    }
 }));
 
 const ServicesSection = () => {
-   const services = [
-      {
-         title: 'Digital Marketing',
-         subtitle: "We focus on ergonomics and meeting you where you work.",
-         icon: "business_center"
-      },
-      {
-         title: 'National top 50 firms',
-         subtitle: "Just type what's on your mind and we'll get you there.",
-         icon: "store_mall_directory"
-      },
-      {
-         title: 'Digital Marketing',
-         subtitle: "the quick fox jumps over the lazy dog",
-         icon: "menu_book"
-      }
-   ]
+   const {t} = useTranslation()
+
+   const servicesIcons = ["manage_history", "high_quality", "local_shipping", "warehouse"]
+   const servicesTexts = t('services', {returnObjects: true})
 
    return (
        <StyledSection>
           <div className="container">
-             <Typography className="title" variant={"h3"}>Services</Typography>
+             <Typography className="title" variant={"h3"}>{t('menu.services')}</Typography>
 
              <Grid container spacing={6}>
-                {services.map((el, idx) => (
+                {servicesTexts && servicesIcons.map((icon, idx) => (
                     <Grid key={idx} item xs={4}>
                        <StyledCard>
-                          <Icon className={"icon"} color={"primary"}>{el.icon}</Icon>
+                          <Icon className={"icon"} color={"primary"}>{icon}</Icon>
 
-                          <Typography className="cardTitle" variant={"h5"}>{el.title}</Typography>
-                          <Typography className="cardSubtitle" variant={"subtitle2"}>{el.subtitle}</Typography>
-                       </StyledCard>
-                    </Grid>
-                ))}
-                {services.map((el, idx) => (
-                    <Grid key={idx} item xs={4}>
-                       <StyledCard>
-                          <Icon className={"icon"} color={"primary"}>{el.icon}</Icon>
-
-                          <Typography className="cardTitle" variant={"h5"}>{el.title}</Typography>
-                          <Typography className="cardSubtitle" variant={"subtitle2"}>{el.subtitle}</Typography>
+                          <Typography className="cardTitle" variant={"h5"}>{servicesTexts[idx].title}</Typography>
+                          <Typography className="cardSubtitle"
+                                      variant={"subtitle2"}>{servicesTexts[idx].subtitle}</Typography>
                        </StyledCard>
                     </Grid>
                 ))}

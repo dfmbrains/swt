@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyledSection} from "./StyledComponents";
 import {Grid, Icon, styled, Typography} from "@mui/material";
+import {useTranslation} from "react-i18next";
 
 const StyledBox = styled(StyledSection)(() => ({
    "& .title": {
@@ -25,52 +26,25 @@ const StyledCard = styled('div')(() => ({
 }));
 
 const BenefitsSection = () => {
-   const data = [
-      {
-         title: 'Большой ассортимент стока',
-         subtitle: 'Большой ассортимент стока- Более более 100000 наименований в наличии',
-         icon: "playlist_add"
-      },
-      {
-         title: 'Тестирование перед отправкой',
-         subtitle: 'Дополнительная проверка и тестирование  перед отправкой к клиенту',
-         icon: "biotech"
-      },
-      {
-         title: 'Авиа доставка или Доставка по всему миру',
-         subtitle: 'Авиа доставка в любую точку мира.',
-         icon: "connecting_airports"
-      },
-      {
-         title: 'Удобная оплата',
-         subtitle: 'Вы получите наши услуги по минимальной цене по сравнению с нашими конкурентами',
-         icon: "payment"
-      },
-      {
-         title: 'Онлайн поддержка 24/7',
-         subtitle: 'Быстрый ответ наших специалистов - 24/7',
-         icon: "support_agent"
-      },
-      {
-         title: 'Онлайн поддержка 24/7',
-         subtitle: 'Быстрый ответ наших специалистов - 24/7',
-         icon: "support_agent"
-      }
-   ]
+   const {t} = useTranslation()
+
+   const data = ["playlist_add", "biotech", "connecting_airports", "payment", "support_agent", "support_agent"]
 
    return (
        <StyledBox>
           <div className="container">
-             <Typography className="title" variant={"h3"}>Our benefits</Typography>
+             <Typography className="title" variant={"h3"}>{t('sections.ourBenefits')}</Typography>
 
              <Grid container spacing={5}>
                 {data.map((el, idx) => (
                     <Grid key={idx} item xs={4}>
                        <StyledCard>
-                          <Icon color={"primary"} className={"icon"}>{el.icon}</Icon>
+                          <Icon color={"primary"} className={"icon"}>{el}</Icon>
 
-                          <Typography className="cardTitle" variant={"h4"}>{el.title}</Typography>
-                          <Typography className="cardSubtitle" variant={"subtitle2"}>{el.subtitle}</Typography>
+                          <Typography className="cardTitle"
+                                      variant={"h4"}>{t(`benefits.item${idx + 1}.title`)}</Typography>
+                          <Typography className="cardSubtitle"
+                                      variant={"subtitle2"}>{t(`benefits.item${idx + 1}.subtitle`)}</Typography>
                        </StyledCard>
                     </Grid>
                 ))}

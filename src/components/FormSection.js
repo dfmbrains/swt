@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyledSection} from "./StyledComponents";
 import {Button, styled, TextField, Typography} from "@mui/material";
+import {useTranslation} from "react-i18next";
 
 const StyledBox = styled(StyledSection)(() => ({
    margin: "30px 0 0",
@@ -27,20 +28,22 @@ const StyledForm = styled('form')(() => ({
 }));
 
 const FormSection = () => {
+   const {t} = useTranslation()
+
    return (
        <StyledBox>
-          <Typography className="title" variant={"h3"}>Leave your email</Typography>
-          <Typography className="subtitle" variant={"h5"}>We will definitely contact you</Typography>
+          <Typography className="title" variant={"h3"}>{t('sections.emailForm')}</Typography>
+          <Typography className="subtitle" variant={"h5"}>{t('formSection.subtitle')}</Typography>
 
           <StyledForm>
              <TextField fullWidth
                         type="email"
                         name="email"
-                        label="Email"
+                        label={t('placeholders.email')}
                         size={"small"}
                         required
              />
-             <Button type={"submit"} fullWidth variant={"contained"}>Send</Button>
+             <Button type={"submit"} fullWidth variant={"contained"}>{t('buttons.send')}</Button>
           </StyledForm>
        </StyledBox>
    );

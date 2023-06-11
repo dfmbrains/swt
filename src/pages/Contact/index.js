@@ -1,8 +1,9 @@
 import React from 'react';
 import {StyledSection} from "../../components/StyledComponents";
-import {Button, Grid, styled, TextField, Typography} from "@mui/material";
+import {Button, Grid, Icon, styled, TextField, Typography} from "@mui/material";
 import {FlexGap10} from "../../components/FlexBoxes";
 import BenefitsSection from "../../components/BenefitsSection";
+import {useTranslation} from "react-i18next";
 
 const StyledBox = styled(StyledSection)(() => ({
    padding: "30px 0 60px",
@@ -21,8 +22,10 @@ const StyledGrid = styled(Grid)(() => ({
       color: "#000",
    },
    "& .phones": {
-      margin: "24px 0",
-      columnGap: "24px"
+      margin: "8px 0 24px",
+      columnGap: "24px",
+
+      "& a": {color: "#000"}
    }
 }));
 
@@ -31,41 +34,37 @@ const StyledForm = styled('form')(() => ({
 }));
 
 const Contact = () => {
+   const tRootKey = 'contacts'
+
+   const {t} = useTranslation()
+
    return (
        <>
           <StyledBox>
              <div className="container">
-                <Typography className={"title"} variant={"h3"}>Get in touch with us</Typography>
+                <Typography className={"title"} variant={"h3"}>{t('sections.getInTouch')}</Typography>
 
                 <Grid container spacing={5} alignItems={"center"}>
                    <StyledGrid item xs={6}>
-                      <Typography className={"subtitle"} variant={"subtitle1"}>Lorem ipsum dolor sit amet, consectetur
-                         adipisicing
-                         elit. Asperiores deserunt dolore dolores itaque nulla officia repellat repudiandae similique
-                         totam vel!</Typography>
-                      <Typography className={"text"} variant={"body1"}>Support Center 24 / 7</Typography>
+                      <Typography className={"subtitle"} variant={"subtitle1"}>{t(`${tRootKey}.subtitle`)}</Typography>
+                      <Typography className={"text"} variant={"body1"}>{t(`${tRootKey}.support`)} 24/7</Typography>
 
                       <FlexGap10 className={"phones"}>
-                         <a className={"contactItem"} href="tel:86-755-2216-0508">
-                            <Typography variant={"h4"}>86-755-2216-0508</Typography>
-                         </a>
-                         <a className={"contactItem"} href="tel:86-755-2216-0508">
-                            <Typography variant={"h4"}>86-755-2216-0508</Typography>
+                         <Icon>phone</Icon>
+                         <a href="tel:+8618521372646">
+                            <Typography variant={"h4"}>+8618521372646</Typography>
                          </a>
                       </FlexGap10>
 
-                      <Grid container>
-                         <Grid item xs={6}>
-                            <Typography className={"text"} variant={"subtitle1"}>Our Location</Typography>
-                            <Typography className={"contactItem"} variant={"h5"}>Shanghai, 112,as</Typography>
-                         </Grid>
-                         <Grid item xs={6}>
-                            <Typography className={"text"} variant={"subtitle1"}>Write to us</Typography>
-                            <a className={"contactItem"} href="mailto:admin@LoremIpsum.com">
-                               <Typography variant={"h5"}>admin@LoremIpsum.com</Typography>
-                            </a>
-                         </Grid>
-                      </Grid>
+                      <Typography className={"text"}
+                                  variant={"h5"}>{t(`${tRootKey}.ourLocation`)}</Typography>
+                      <Typography className={"contactItem"} variant={"subtitle1"}>Building C, No. 888, West Huanhu 2nd
+                         Road, <br/> Lingang New Area of China (Shanghai) Pilot Free Trade Zone</Typography>
+
+                      <Typography mt={3} className={"text"} variant={"h5"}>{t(`${tRootKey}.writeUs`)}</Typography>
+                      <a className={"contactItem"} href="mailto:info@wiswealth.com">
+                         <Typography variant={"subtitle1"}>info@wiswealth.com</Typography>
+                      </a>
                    </StyledGrid>
                    <Grid item xs={6}>
                       <StyledForm>
@@ -74,8 +73,8 @@ const Contact = () => {
                                <TextField
                                    fullWidth
                                    type="text"
+                                   label={t('placeholders.name')}
                                    name="name"
-                                   label="Name"
                                    variant="standard"
                                    required
                                />
@@ -84,8 +83,8 @@ const Contact = () => {
                                <TextField
                                    fullWidth
                                    type="email"
+                                   label={t('placeholders.email')}
                                    name="email"
-                                   label="Email"
                                    variant="standard"
                                    required
                                />
@@ -94,8 +93,8 @@ const Contact = () => {
                                <TextField
                                    fullWidth
                                    type="text"
-                                   name="company"
-                                   label="Your company"
+                                   label={t('placeholders.yourCompany')}
+                                   name="yourCompany"
                                    variant="standard"
                                />
                             </Grid>
@@ -103,8 +102,8 @@ const Contact = () => {
                                <TextField
                                    fullWidth
                                    type="text"
+                                   label={t('placeholders.phoneNumber')}
                                    name="phoneNumber"
-                                   label="Phone Number"
                                    variant="standard"
                                />
                             </Grid>
@@ -112,8 +111,8 @@ const Contact = () => {
                                <TextField
                                    fullWidth
                                    type="text"
+                                   label={t('placeholders.message')}
                                    name="message"
-                                   label="Message"
                                    variant="standard"
                                    required
                                    multiline
@@ -122,7 +121,8 @@ const Contact = () => {
                             </Grid>
 
                             <Grid item xs={12}>
-                               <Button size={"large"} type={"submit"} fullWidth variant={"contained"}>Send</Button>
+                               <Button size={"large"} type={"submit"} fullWidth
+                                       variant={"contained"}>{t('buttons.send')}</Button>
                             </Grid>
                          </Grid>
                       </StyledForm>

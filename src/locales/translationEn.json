@@ -1,0 +1,120 @@
+{
+  "currentLanguage": "en",
+  "placeholders": {
+    "email": "Email",
+    "name": "Name",
+    "yourCompany": "Your company",
+    "phoneNumber": "Phone Number",
+    "message": "Message",
+    "search": "Search"
+  },
+  "buttons": {
+    "send": "Send"
+  },
+  "menu": {
+    "home": "Home",
+    "aboutUs": "About us",
+    "products": "Products",
+    "services": "Services",
+    "contacts": "Contact"
+  },
+  "sections": {
+    "promo": "Let’s build <br/> future <br/> together",
+    "getInTouch": "Get in touch with us",
+    "aboutUs": "About us",
+    "brands": "Brands",
+    "ourBenefits": "Our benefits",
+    "products": "Products",
+    "applications": "Applications",
+    "ourStorage": "Our storage",
+    "whyUs": "Why us?",
+    "emailForm": "Leave your email"
+  },
+  "about": {
+    "text": {
+      "part1": "For the past 13 years, Shanghai Wiswidth Technology has been a leading company in the field of distribution of electronic components, passive components and is a major supplier of major electronic components from global manufacturers. Our company was founded in 2010 and since then has been the leader of distribution in the Chinese market. Our head office is located in Shanghai and has its own warehouse in Shenzhen. The concluded contracts and agreements allow us to supply only original products to the Chinese market and keep the quality and service for our customers at the level.",
+      "part2": "We, Shanghai Wisalth Technology have created a strong team consisting of marketing, technical and logistics components, which provides our partners with comprehensive supply services, including a long-term stock of passive components, as well as semiconductors. Our company provides the fastest two-day delivery of missing components, as well as their specification in the required quantity. Our team consists of a wide range of specialists who speak several languages of the world and have up-to-date knowledge. Our specialists are ready to provide advice and support for you at any time of the day."
+    },
+    "partners": "Shanghai Wiswidth Technology is the official distributor of Samsung, TDK, muRata, Vishay, Kemet, Nic Components, Maruwa, Fairchild, etc. The main goal of our company is to provide services of the highest quality, according to high standards of service and at reasonable prices. Shanghai Wisewalthtechnology intends for long-term and productive cooperation."
+  },
+  "benefits": {
+    "item1": {
+      "title": "A large assortment of stock",
+      "subtitle": "More than 100,000 items in stock"
+    },
+    "item2": {
+      "title": "Testing",
+      "subtitle": "Additional verification and testing before sending to the client"
+    },
+    "item3": {
+      "title": "Worldwide delivery",
+      "subtitle": "Air delivery to anywhere in the world."
+    },
+    "item4": {
+      "title": "Payment",
+      "subtitle": "Payment"
+    },
+    "item5": {
+      "title": "Online support 24/7",
+      "subtitle": "Consultation and KP 24/7"
+    },
+    "item6": {
+      "title": "Product Report",
+      "subtitle": "Photo report before shipment"
+    }
+  },
+  "formSection": {
+    "subtitle": "We will definitely contact you"
+  },
+  "footer": {
+    "allRightsReserved": "All Rights Reserved."
+  },
+  "whyUsSection": [
+    "Trust in cooperation first of all. Cooperation without deception and lies.",
+    "100% original components, delivery within 2 days after payment",
+    "The product has more than 100,000 items in stock",
+    "1.5 year warranty (18 months)"
+  ],
+  "applications": [
+    {
+      "title": "Medical industry",
+      "subtitle": "Production of medical electronics"
+    },
+    {
+      "title": "Automotive industry",
+      "subtitle": "Supply of electronic components for the automotive industry"
+    },
+    {
+      "title": "Aviation industry",
+      "subtitle": "Electronic components for aerospace equipment"
+    },
+    {
+      "title": "Power Engineering",
+      "subtitle": "Industrial electronics and Electrical products line"
+    }
+  ],
+  "contacts": {
+    "subtitle": "Dear customers! Please check the prices and availability of the goods with the managers by phone or mail. We will be happy to help you!",
+    "support": "Support",
+    "ourLocation": "Our Location",
+    "writeUs": "Write to us"
+  },
+  "services": [
+    {
+      "title": "Warranty",
+      "subtitle": "Shanghai Wisalth Technology gives 18 months warranty on electronic components according to the factories' warranty."
+    },
+    {
+      "title": "Supply",
+      "subtitle": "Shanghai Wisalth Technology company guarantees the supply of 100% original electronic components"
+    },
+    {
+      "title": "Delivery",
+      "subtitle": "Worldwide delivery via EMS, FEDEX, DHL, UPS from 3-7 days, we have our own air delivery to the CIS countries - from 2-10 days."
+    },
+    {
+      "title": "Storage",
+      "subtitle": "More than 100,000 items of electronic components are available in our warehouse."
+    }
+  ]
+}

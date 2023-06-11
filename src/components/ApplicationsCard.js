@@ -2,7 +2,6 @@ import React from 'react';
 import {styled, Typography} from "@mui/material";
 
 const StyledCard = styled('div')(({bgimage}) => ({
-   transition: "0.15s",
    background: `url(${bgimage})`,
    backgroundPosition: "center",
    backgroundSize: "cover",
@@ -26,9 +25,10 @@ const StyledCard = styled('div')(({bgimage}) => ({
       height: "100%",
       width: "100%",
       borderRadius: 12,
+      transition: "0.15s"
    },
 
-   "& .companyOrientationCardBox": {
+   "& .applicationCardBox": {
       position: "relative",
       zIndex: 1,
       padding: "24px 16px",
@@ -46,28 +46,30 @@ const StyledCard = styled('div')(({bgimage}) => ({
       }
    },
 
-   "& .companyOrientationCardTitle": {
+   "& .applicationCardTitle": {
       fontWeight: 500,
       color: "#FFF"
    },
 
-   "& .companyOrientationCardSubtitle": {
+   "& .applicationCardSubtitle": {
       fontWeight: 400,
-      color: "#c7c5c5"
+      color: "#c7c5c5",
+      minHeight: "29px",
+      marginBottom: -10
    }
 }));
 
-const CompanyOrientationCard = ({orientation}) => {
+const ApplicationsCard = ({application}) => {
    return (
-       <StyledCard bgimage={orientation.img}>
-          <div className={"companyOrientationCardBox"}>
-             <Typography className="companyOrientationCardTitle" variant={"h5"}>{orientation.title.ru}</Typography>
+       <StyledCard bgimage={application.img}>
+          <div className={"applicationCardBox"}>
+             <Typography className="applicationCardTitle" variant={"h5"}>{application.title}</Typography>
 
-             <Typography className="companyOrientationCardSubtitle"
-                         variant={"body2"}>{orientation.subtitle.ru}</Typography>
+             <Typography className="applicationCardSubtitle"
+                         variant={"body2"}>{application.subtitle}</Typography>
           </div>
        </StyledCard>
    );
 };
 
-export default CompanyOrientationCard;
+export default ApplicationsCard;

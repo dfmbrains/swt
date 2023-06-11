@@ -1,6 +1,7 @@
 import React from 'react';
 import {styled, Typography} from "@mui/material";
 import PromoBg from '../../../assets/imgs/promo-bg.webp'
+import {Trans, useTranslation} from "react-i18next";
 
 const StyledSection = styled('section')(() => ({
    padding: '110px 0',
@@ -26,10 +27,14 @@ const StyledSection = styled('section')(() => ({
 }));
 
 const HomePromoSection = () => {
+   const {t} = useTranslation()
+
    return (
        <StyledSection>
           <div className="container">
-             <Typography className={"title"} variant={"h1"}>Let’s build <br/> future <br/> together</Typography>
+             <Typography className={"title"} variant={"h1"}>
+                <Trans i18nKey={"sections.promo"} components={{br: <br/>}}/>
+             </Typography>
           </div>
        </StyledSection>
    );

@@ -1,84 +1,71 @@
 import React from 'react';
-import {Icon, styled, Typography} from "@mui/material";
-import {FlexAllCenter, FlexGap10} from "./FlexBoxes";
+import {styled, Typography} from "@mui/material";
 
-const StyledCard = styled('div')(({theme}) => ({
-   padding: "24px 16px",
-   background: "#F7F7F7",
-   borderRadius: 12,
+const StyledCard = styled('div')(({bgimage}) => ({
    transition: "0.15s",
+   background: `url(${bgimage})`,
+   backgroundPosition: "center",
+   backgroundSize: "cover",
+   backgroundRepeat: "no-repeat",
+   position: "relative",
+   borderRadius: 12,
+   cursor: "pointer",
 
    "&:hover": {
-      boxShadow: "0px 0px 10px #F0F0F0"
+      "&:before": {
+         backgroundColor: "#00000099",
+      }
+   },
+
+   "&:before": {
+      content: "''",
+      position: "absolute",
+      top: "0",
+      left: "0",
+      backgroundColor: "#00000090",
+      height: "100%",
+      width: "100%",
+      borderRadius: 12,
+   },
+
+   "& .companyOrientationCardBox": {
+      position: "relative",
+      zIndex: 1,
+      padding: "24px 16px",
+      height: "200px",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "flex-end",
+      rowGap: "12px",
+      userSelect: "none"
+   },
+
+   "& .MuiTypography-root": {
+      "&::first-letter": {
+         textTransform: "uppercase"
+      }
    },
 
    "& .companyOrientationCardTitle": {
-      margin: "16px 0",
-      height: "44px",
-
-      "&::first-letter": {
-         textTransform: "uppercase"
-      }
+      fontWeight: 500,
+      color: "#FFF"
    },
 
    "& .companyOrientationCardSubtitle": {
-      marginTop: "16px",
-      height: "54px",
-      color: "#737373",
       fontWeight: 400,
-
-      "&::first-letter": {
-         textTransform: "uppercase"
-      }
-   },
-
-   "& .line": {
-      background: theme.palette.primary.main,
-      borderRadius: 6,
-      height: 6
-   },
-   "& .line-small": {
-      width: 20
-   },
-   "& .line-big": {
-      width: 60
-   },
-
-   [theme.breakpoints.down("sm")]: {
-      "& img": {
-         height: "200px"
-      },
-   }
-}));
-
-const CompanyOrientationCardImgBox = styled(FlexAllCenter)(() => ({
-   width: "80px",
-   height: "80px",
-   objectFit: "cover",
-   borderRadius: 12,
-   background: "#FFF",
-
-   "& .icon": {
-      fontSize: 48
+      color: "#c7c5c5"
    }
 }));
 
 const CompanyOrientationCard = ({orientation}) => {
    return (
-       <StyledCard>
-          <CompanyOrientationCardImgBox>
-             <Icon className={"icon"} color={"primary"}>{orientation.icon}</Icon>
-          </CompanyOrientationCardImgBox>
+       <StyledCard bgimage={orientation.img}>
+          <div className={"companyOrientationCardBox"}>
+             <Typography className="companyOrientationCardTitle" variant={"h5"}>{orientation.title.ru}</Typography>
 
-          <Typography className="companyOrientationCardTitle" variant={"h5"}>{orientation.title.ru}</Typography>
-
-          <FlexGap10>
-             <div className="line line-big"/>
-             <div className="line line-small"/>
-          </FlexGap10>
-
-          <Typography className="companyOrientationCardSubtitle"
-                      variant={"subtitle2"}>{orientation.subtitle.ru}</Typography>
+             <Typography className="companyOrientationCardSubtitle"
+                         variant={"body2"}>{orientation.subtitle.ru}</Typography>
+          </div>
        </StyledCard>
    );
 };

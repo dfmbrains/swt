@@ -4,7 +4,7 @@ import {Grid, styled, Typography} from "@mui/material";
 import CompanyImg from '../../../assets/imgs/company.webp'
 import {useTranslation} from "react-i18next";
 
-const StyledImgBox = styled('div')(({theme}) => ({
+const StyledImgBox = styled('div')(() => ({
    height: "420px",
    borderRadius: "12px",
    overflow: "hidden",

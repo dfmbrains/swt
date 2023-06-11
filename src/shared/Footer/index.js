@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, Icon, styled, Typography, useTheme} from "@mui/material";
 import LogoCompany from "../../assets/brand/logo-company-white.svg";
-import {FlexBetweenAlignStart, FlexBox, FlexGap10} from "../../components/FlexBoxes";
+import {FlexBetweenAlignStart, FlexBox} from "../../components/FlexBoxes";
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 
@@ -67,7 +67,7 @@ const StyledFlexBox = styled(FlexBox)(({theme}) => ({
    }
 }));
 
-const StyledContactBox = styled('div')(({theme}) => ({
+const StyledContactBox = styled('div')(() => ({
    "& .MuiTypography-root": {
       textTransform: "lowercase"
    },

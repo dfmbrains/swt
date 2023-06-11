@@ -1,7 +1,7 @@
 import React from 'react';
 import {styled, Typography} from "@mui/material";
 import PromoBg from '../../../assets/imgs/promo-bg.webp'
-import {Trans, useTranslation} from "react-i18next";
+import {Trans} from "react-i18next";
 
 const StyledSection = styled('section')(() => ({
    padding: '110px 0',
@@ -27,8 +27,6 @@ const StyledSection = styled('section')(() => ({
 }));
 
 const HomePromoSection = () => {
-   const {t} = useTranslation()
-
    return (
        <StyledSection>
           <div className="container">

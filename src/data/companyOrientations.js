@@ -12,7 +12,7 @@ export const companyOrientations = [
    {
       title: {ru: 'Автомобильная промышленность', en: ''},
       subtitle: {ru: 'Поставка электронных компонентов для автомобильной промышленности', en: ''},
-      img: EnergeticImg
+      img: AutoImg
    },
    {
       title: {ru: 'Авиационная промышленность', en: ''},
@@ -22,6 +22,6 @@ export const companyOrientations = [
    {
       title: {ru: 'Энергетика', en: ''},
       subtitle: {ru: 'Промышленная электроника и электротехническая линия продукций', en: ''},
-      img: AutoImg
+      img: EnergeticImg
    }
 ]

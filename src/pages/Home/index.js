@@ -12,9 +12,9 @@ const Home = () => {
        <>
           <HomePromoSection/>
           <HomeProducts/>
-          <HomeWhyChooseUs/>
           <HomeCompanyOrientations/>
           <HomeSwipeSection/>
+          <HomeWhyChooseUs/>
           <BenefitsSection/>
           <FormSection/>
        </>

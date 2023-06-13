@@ -1,5 +1,6 @@
 import React from 'react';
 import {styled, Typography} from "@mui/material";
+import ImageComponent from "./ImageComponent";
 
 const StyledCard = styled('div')(({theme}) => ({
    padding: "16px 16px 24px",
@@ -32,7 +33,7 @@ const StyledCard = styled('div')(({theme}) => ({
 const ProductTypeCard = ({productType}) => {
    return (
        <StyledCard>
-          <img src={productType.img} alt={productType.title.ru}/>
+          <ImageComponent src={productType.img} alt={productType.title.ru}/>
           <Typography className="productTypeCardTitle" variant={"h5"}>{productType.title.ru}</Typography>
        </StyledCard>
    );

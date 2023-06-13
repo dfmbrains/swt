@@ -4,6 +4,7 @@ import {styled, Typography, useMediaQuery, useTheme} from "@mui/material";
 import SwipeImg1 from '../../../assets/imgs/swipeImg1.webp';
 import {StyledSection} from "../../../components/StyledComponents";
 import {useTranslation} from "react-i18next";
+import ImageComponent from "../../../components/ImageComponent";
 
 const StyledRow = styled(ScrollContainer)(({theme}) => ({
    display: "flex",
@@ -63,9 +64,9 @@ const HomeSwipeSection = () => {
           </div>
 
           <StyledRow ref={rowRef} className="messagesModal__menu" horizontal={true} vertical={false}>
-             <img src={SwipeImg1} alt="img"/>
-             <img src={SwipeImg1} alt="img"/>
-             <img src={SwipeImg1} alt="img"/>
+             <ImageComponent src={SwipeImg1} alt="img"/>
+             <ImageComponent src={SwipeImg1} alt="img"/>
+             <ImageComponent src={SwipeImg1} alt="img"/>
           </StyledRow>
        </StyledSection>
    );

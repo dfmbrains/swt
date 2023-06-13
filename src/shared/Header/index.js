@@ -14,6 +14,7 @@ import {Link, NavLink} from "react-router-dom";
 import LogoCompany from '../../assets/brand/logo-company.svg'
 import {FlexBetweenAlignCenter, FlexBox} from "../../components/FlexBoxes";
 import {useTranslation} from "react-i18next";
+import ImageComponent from "../../components/ImageComponent";
 
 const StyledHeader = styled('header')(({theme}) => ({
    padding: '24px 0',
@@ -80,7 +81,7 @@ const Header = () => {
           <div className="container">
              <FlexBetweenAlignCenter>
                 <Link to={"/"}>
-                   <img className="logo" src={LogoCompany} alt="swt"/>
+                   <ImageComponent className="logo" src={LogoCompany} alt="swt"/>
                 </Link>
                 <StyledFlexBox>
                    {isLaptop ? (
@@ -92,7 +93,7 @@ const Header = () => {
                              <NavLink className="item" to={"/about"}>
                                 <Typography variant={"subtitle1"}>{t('menu.aboutUs')}</Typography>
                              </NavLink>
-                             <NavLink className="item" to={"/product"}>
+                             <NavLink className="item" to={"/products"}>
                                 <Typography variant={"subtitle1"}>{t('menu.products')}</Typography>
                              </NavLink>
                              <NavLink className="item" to={"/services"}>

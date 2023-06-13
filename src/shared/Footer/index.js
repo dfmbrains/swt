@@ -4,6 +4,7 @@ import LogoCompany from "../../assets/brand/logo-company-white.svg";
 import {FlexBetweenAlignStart, FlexBox} from "../../components/FlexBoxes";
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
+import ImageComponent from "../../components/ImageComponent";
 
 const StyledFooter = styled('footer')(({theme}) => ({
    padding: '24px 0',
@@ -96,7 +97,7 @@ const Footer = () => {
                    width: "100%"
                 }
              }}>
-                <img className="logo" src={LogoCompany} alt="swt"/>
+                <ImageComponent className="logo" src={LogoCompany} alt="swt"/>
                 <StyledFlexBox>
                    <StyledMenu>
                       <Link className={"item"} to={"/"}>

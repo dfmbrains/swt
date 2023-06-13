@@ -1,31 +1,28 @@
-import React from "react";
+import React, {lazy} from "react";
 import {Route, Routes} from "react-router-dom";
-import Header from "./shared/Header";
-import Footer from "./shared/Footer";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Contact from "./pages/Contact";
-import ScrollTop from "./components/ScrollTop";
+import Loadable from "./components/Loadable";
+import AppLayout from "./shared/Layouts/AppLayout";
+
+const Home = Loadable(lazy(() => import('./pages/Home')));
+const About = Loadable(lazy(() => import('./pages/About')));
+const Services = Loadable(lazy(() => import('./pages/Services')));
+const Contact = Loadable(lazy(() => import('./pages/Contact')));
+const Products = Loadable(lazy(() => import('./pages/Products')));
+const NotFound = Loadable(lazy(() => import('./pages/NotFound')));
 
 function App() {
    return (
-       <>
-          <Header/>
+       <Routes>
+          <Route path={"/"} element={<AppLayout/>}>
+             <Route index element={<Home/>}/>
+             <Route path={"about"} element={<About/>}/>
+             <Route path={"services"} element={<Services/>}/>
+             <Route path={"contact"} element={<Contact/>}/>
+             <Route path={"products"} element={<Products/>}/>
+          </Route>
 
-          <main>
-             <Routes>
-                <Route path={"/"} element={<Home/>}/>
-                <Route path={"/about"} element={<About/>}/>
-                <Route path={"/services"} element={<Services/>}/>
-                <Route path={"/contact"} element={<Contact/>}/>
-             </Routes>
-          </main>
-
-          <Footer/>
-
-          <ScrollTop/>
-       </>
+          <Route path={"*"} element={<NotFound/>}/>
+       </Routes>
    );
 }
 

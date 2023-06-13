@@ -14,7 +14,6 @@ import {Link, NavLink} from "react-router-dom";
 import LogoCompany from '../../assets/brand/logo-company.svg'
 import {FlexBetweenAlignCenter, FlexBox} from "../../components/FlexBoxes";
 import {useTranslation} from "react-i18next";
-import i18next from "i18next";
 
 const StyledHeader = styled('header')(({theme}) => ({
    padding: '24px 0',
@@ -71,7 +70,7 @@ const StyledSearchTextField = styled(TextField)(({theme}) => ({
 }));
 
 const Header = () => {
-   const {t} = useTranslation()
+   const {t, i18n} = useTranslation()
    const theme = useTheme()
 
    const isLaptop = useMediaQuery(theme.breakpoints.up("md"));
@@ -115,7 +114,7 @@ const Header = () => {
                                      color={"primary"}>search</Icon></InputAdornment>,
                               }}
                           />
-                          <Button onClick={() => i18next.changeLanguage(t('currentLanguage') === 'ru' ? 'en' : 'ru')}
+                          <Button onClick={() => i18n.changeLanguage(t('currentLanguage') === 'ru' ? 'en' : 'ru')}
                                   variant={"text"} color={"secondary"} size={isLaptop ? "small" : 'medium'}
                                   startIcon={<Icon>language</Icon>}>
                              <Typography variant="subtitle2">{t('currentLanguage').toUpperCase()}</Typography>

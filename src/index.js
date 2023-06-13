@@ -9,7 +9,7 @@ import App from './App';
 import SWTTheme from "./theme";
 import {BrowserRouter} from "react-router-dom";
 import {I18nextProvider} from "react-i18next";
-import i18n from "./locales/index";
+import i18n from './locales/index'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,34 +1,43 @@
+import ResistorImg from '../assets/productTypes/resistor.webp'
+import CeramicCapacitorImg from '../assets/productTypes/ceramicCapacitor.webp'
+import IntegratedCircuitsImg from '../assets/productTypes/integratedCircuits.webp'
+import DiodeImg from '../assets/productTypes/diode.webp'
+import TantalumCapacitorImg from '../assets/productTypes/tantalumCapacitor.webp'
+import AluminumCapacitorImg from '../assets/productTypes/aluminumCapacitor.webp'
+import InductorImg from '../assets/productTypes/inductor.webp'
+import FilmCapacitorImg from '../assets/productTypes/filmCapacitor.webp'
+
 export const productTypes = [
    {
       title: {ru: 'Resistor', en: 'Resistor'},
-      img: 'https://media.digikey.com/Photos/Panasonic%20Photos/ERJ-PA2-Series.jpg'
+      img: ResistorImg
    },
    {
       title: {ru: 'Ceramic Capacitor', en: 'Ceramic Capacitor'},
-      img: 'https://media.digikey.com/Photos/Panasonic%20Photos/ERJ-PA2-Series.jpg'
+      img: CeramicCapacitorImg
    },
    {
       title: {ru: 'Integrated Circuits (ICs)', en: 'Integrated Circuits (ICs)'},
-      img: 'https://media.digikey.com/Renders/Xilinx%20Renders/122;PK012;VQ,VQG;100.jpg'
+      img: IntegratedCircuitsImg
    },
    {
       title: {ru: 'Diode', en: 'Diode'},
-      img: 'https://media.digikey.com/Renders/Xilinx%20Renders/122;PK012;VQ,VQG;100.jpg'
+      img: DiodeImg
    },
    {
       title: {ru: 'Tantalum Capacitor', en: 'Tantalum Capacitor'},
-      img: 'https://media.digikey.com/Renders/Xilinx%20Renders/122;PK012;VQ,VQG;100.jpg'
+      img: TantalumCapacitorImg
    },
    {
       title: {ru: 'Aluminum Electrolytic Capacitor', en: 'Aluminum Electrolytic Capacitor'},
-      img: 'https://media.digikey.com/Renders/Xilinx%20Renders/122;PK012;VQ,VQG;100.jpg'
+      img: AluminumCapacitorImg
    },
    {
       title: {ru: 'Inductor', en: 'Inductor'},
-      img: 'https://media.digikey.com/Renders/Murata%20Renders/LQW15A.jpg'
+      img: InductorImg
    },
    {
       title: {ru: 'Film Capacitor', en: 'Film Capacitor'},
-      img: 'https://media.digikey.com/Photos/Kemet%20Photos/MFG_R76_Rendering_SW.jpg'
+      img: FilmCapacitorImg
    }
 ]

@@ -16,14 +16,8 @@ const StyledGrid = styled(Grid)(() => ({
    "& .text": {
       color: "#737373",
    },
-   "& .contactItem": {
-      marginTop: "8px",
-      display: "block",
-      color: "#000",
-   },
-   "& .phones": {
+   "& .contactRow": {
       margin: "8px 0 24px",
-      columnGap: "24px",
 
       "& a": {color: "#000"}
    }
@@ -47,29 +41,37 @@ const Contact = () => {
                 <Grid container spacing={5} alignItems={"center"}>
                    <StyledGrid item xs={6}>
                       <Typography className={"subtitle"} variant={"subtitle1"}>{t(`${tRootKey}.subtitle`)}</Typography>
-                      <Typography className={"text"} variant={"body1"}>{t(`${tRootKey}.support`)} 24/7</Typography>
 
-                      <FlexGap10 className={"phones"}>
-                         <Icon>phone</Icon>
+                      <Typography className={"text"} variant={"h6"}>{t(`${tRootKey}.support`)} 24/7</Typography>
+                      <FlexGap10 className={"contactRow"}>
+                         <Icon color={"primary"}>phone</Icon>
                          <a href="tel:+8618521372646">
-                            <Typography variant={"h4"}>+8618521372646</Typography>
+                            <Typography variant={"subtitle1"}>+8618521372646</Typography>
                          </a>
                       </FlexGap10>
 
                       <Typography className={"text"}
-                                  variant={"h5"}>{t(`${tRootKey}.ourLocation`)}</Typography>
-                      <Typography className={"contactItem"} variant={"subtitle1"}>Building C, No. 888, West Huanhu 2nd
-                         Road, <br/> Lingang New Area of China (Shanghai) Pilot Free Trade Zone</Typography>
+                                  variant={"h6"}>{t(`${tRootKey}.ourLocation`)}:</Typography>
+                      <FlexGap10 className={"contactRow"}>
+                         <Icon color={"primary"}>location_on</Icon>
+                         <Typography variant={"subtitle1"}>Building C, No. 888, West Huanhu 2nd Road, <br/> Lingang New
+                            Area of China (Shanghai) Pilot Free Trade Zone</Typography>
+                      </FlexGap10>
 
-                      <Typography mt={3} className={"text"} variant={"h5"}>{t(`${tRootKey}.writeUs`)}</Typography>
-                      <a className={"contactItem"} href="mailto:info@wiswealth.com">
-                         <Typography variant={"subtitle1"}>info@wiswealth.com</Typography>
-                      </a>
+                      <Typography mt={3} className={"text"}
+                                  variant={"h6"}>{t(`${tRootKey}.writeUs`)}:</Typography>
+                      <FlexGap10 className={"contactRow"}>
+                         <Icon color={"primary"}>email</Icon>
+                         <a href="mailto:info@wiswealth.com">
+                            <Typography variant={"subtitle1"}>info@wiswealth.com</Typography>
+                         </a>
+                      </FlexGap10>
                    </StyledGrid>
+
                    <Grid item xs={6}>
                       <StyledForm>
-                         <Grid container spacing={5}>
-                            <Grid item xs={6}>
+                         <Grid container spacing={3}>
+                            <Grid item xs={12}>
                                <TextField
                                    fullWidth
                                    type="text"
@@ -93,6 +95,15 @@ const Contact = () => {
                                <TextField
                                    fullWidth
                                    type="text"
+                                   label={t('placeholders.phoneNumber')}
+                                   name="phoneNumber"
+                                   variant="standard"
+                               />
+                            </Grid>
+                            <Grid item xs={6}>
+                               <TextField
+                                   fullWidth
+                                   type="text"
                                    label={t('placeholders.yourCompany')}
                                    name="yourCompany"
                                    variant="standard"
@@ -102,8 +113,8 @@ const Contact = () => {
                                <TextField
                                    fullWidth
                                    type="text"
-                                   label={t('placeholders.phoneNumber')}
-                                   name="phoneNumber"
+                                   label={t('placeholders.partNumber')}
+                                   name="partNumber"
                                    variant="standard"
                                />
                             </Grid>

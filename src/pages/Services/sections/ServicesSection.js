@@ -26,7 +26,7 @@ const StyledCard = styled('div')(() => ({
 const ServicesSection = () => {
    const {t} = useTranslation()
 
-   const servicesIcons = ["manage_history", "high_quality", "local_shipping", "warehouse"]
+   const servicesIcons = ["manage_history", "high_quality", "local_shipping", "warehouse", "support_agent", "speed"]
    const servicesTexts = t('services', {returnObjects: true})
 
    return (

@@ -14,7 +14,7 @@ const StyledBox = styled(StyledSection)(() => ({
    },
    "& .subtitle": {
       textAlign: "center",
-      margin: "0 0 40px",
+      margin: "0 0 32px",
    }
 }));
 
@@ -36,6 +36,12 @@ const FormSection = () => {
           <Typography className="subtitle" variant={"h5"}>{t('formSection.subtitle')}</Typography>
 
           <StyledForm>
+             <TextField fullWidth
+                        type="text"
+                        name="partNumber"
+                        label={t('placeholders.partNumber')}
+                        size={"small"}
+             />
              <TextField fullWidth
                         type="email"
                         name="email"

@@ -18,14 +18,17 @@ const StyledCard = styled('div')(({theme}) => ({
       marginTop: "16px"
    },
    "& img": {
-      width: "100%",
+      width: "80%",
       objectFit: "cover",
-      borderRadius: 12
+      borderRadius: 12,
+      display: "block",
+      margin: "0 auto"
    },
 
    [theme.breakpoints.down("sm")]: {
       "& img": {
-         height: "200px"
+         objectFit: "cover",
+         width: "70%",
       },
    }
 }));

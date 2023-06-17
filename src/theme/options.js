@@ -66,6 +66,14 @@ export const themeOptions = (theme) => {
             [theme.breakpoints.down("sm")]: {fontSize: 15},
             [theme.breakpoints.down("xs")]: {fontSize: 14}
          },
+         h6: {
+            fontSize: 17,
+            fontWeight: "500",
+            lineHeight: 1.2,
+
+            [theme.breakpoints.down("lg")]: {fontSize: 16},
+            [theme.breakpoints.down("sm")]: {fontSize: 14.5},
+         },
          subtitle1: {
             fontSize: 16,
             fontWeight: "500",

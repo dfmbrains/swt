@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import {Link, NavLink} from "react-router-dom";
 import LogoCompany from '../../assets/brand/logo-company.svg'
-import {FlexBetweenAlignCenter, FlexBox} from "../../components/FlexBoxes";
+import {FlexBetweenAlignCenter, FlexBox, FlexGap10} from "../../components/FlexBoxes";
 import {useTranslation} from "react-i18next";
 import ImageComponent from "../../components/ImageComponent";
 
@@ -103,23 +103,25 @@ const Header = () => {
                                 <Typography variant={"subtitle1"}>{t('menu.contacts')}</Typography>
                              </NavLink>
                           </StyledMenu>
-                          <StyledSearchTextField
-                              fullWidth
-                              type="text"
-                              name="search"
-                              label={t('placeholders.search')}
-                              size={"small"}
-                              variant={"standard"}
-                              InputProps={{
-                                 endAdornment: <InputAdornment position="end"><Icon
-                                     color={"primary"}>search</Icon></InputAdornment>,
-                              }}
-                          />
-                          <Button onClick={() => i18n.changeLanguage(t('currentLanguage') === 'ru' ? 'en' : 'ru')}
-                                  variant={"text"} color={"secondary"} size={isLaptop ? "small" : 'medium'}
-                                  startIcon={<Icon>language</Icon>}>
-                             <Typography variant="subtitle2">{t('currentLanguage').toUpperCase()}</Typography>
-                          </Button>
+                          <FlexGap10>
+                             <StyledSearchTextField
+                                 fullWidth
+                                 type="text"
+                                 name="search"
+                                 label={t('placeholders.search')}
+                                 size={"small"}
+                                 variant={"standard"}
+                                 InputProps={{
+                                    endAdornment: <InputAdornment position="end"><Icon
+                                        color={"primary"}>search</Icon></InputAdornment>,
+                                 }}
+                             />
+                             <Button onClick={() => i18n.changeLanguage(t('currentLanguage') === 'ru' ? 'en' : 'ru')}
+                                     variant={"text"} color={"secondary"} size={isLaptop ? "small" : 'medium'}
+                                     startIcon={<Icon>language</Icon>}>
+                                <Typography variant="subtitle2">{t('currentLanguage').toUpperCase()}</Typography>
+                             </Button>
+                          </FlexGap10>
                        </>
                    ) : (
                        <IconButton color={"primary"}>

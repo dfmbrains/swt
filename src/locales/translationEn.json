@@ -4,9 +4,10 @@
     "email": "Email",
     "name": "Name",
     "yourCompany": "Your company",
-    "phoneNumber": "Phone Number",
+    "phoneNumber": "Phone number",
     "message": "Message",
-    "search": "Search"
+    "search": "Search",
+    "partNumber": "Part number"
   },
   "buttons": {
     "send": "Send"
@@ -35,7 +36,11 @@
       "part1": "For the past 13 years, Shanghai Wiswealth Technology has been a leading company in the field of distribution of electronic components, passive components and is a major supplier of major electronic components from global manufacturers. Our company was founded in 2010 and since then has been the leader of distribution in the Chinese market. Our head office is located in Shanghai and has its own warehouse in Shenzhen. The concluded contracts and agreements allow us to supply only original products to the Chinese market and keep the quality and service for our customers at the level.",
       "part2": "We, Shanghai Wiswealth Technology have created a strong team consisting of marketing, technical and logistics components, which provides our partners with comprehensive supply services, including a long-term stock of passive components, as well as semiconductors. Our company provides the fastest two-day delivery of missing components, as well as their specification in the required quantity. Our team consists of a wide range of specialists who speak several languages of the world and have up-to-date knowledge. Our specialists are ready to provide advice and support for you at any time of the day."
     },
-    "partners": "Shanghai Wiswealth Technology is the official distributor of Samsung, TDK, muRata, Vishay, Kemet, Nic Components, Maruwa, Fairchild, etc. The main goal of our company is to provide services of the highest quality, according to high standards of service and at reasonable prices. Shanghai Wisewalthtechnology intends for long-term and productive cooperation."
+    "partners": [
+      "Shanghai Wiswealth Technology is the official distributor of Samsung, TDK, muRata, Vishay, Kemet, Nic Components, Maruwa, Fairchild, etc.",
+      "The main goal of our company is to provide services of the highest quality, according to high standards of service and at reasonable prices.",
+      "Shanghai Wiswealth technology intends for long-term and productive cooperation."
+    ]
   },
   "benefits": {
     "item1": {
@@ -115,6 +120,14 @@
     {
       "title": "Storage",
       "subtitle": "More than 100,000 items of electronic components are available in our warehouse."
+    },
+    {
+      "title": "Support",
+      "subtitle": "Our specialists will help you deliver the missing element or pick up analogues."
+    },
+    {
+      "title": "Speed",
+      "subtitle": "High speed of processing requests."
     }
   ]
 }

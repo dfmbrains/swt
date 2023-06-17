@@ -28,7 +28,7 @@ const StyledCard = styled('div')(() => ({
 const BenefitsSection = () => {
    const {t} = useTranslation()
 
-   const data = ["playlist_add", "biotech", "connecting_airports", "payment", "support_agent", "support_agent"]
+   const data = ["playlist_add", "biotech", "connecting_airports", "card_membership", "support_agent", "flag"]
 
    return (
        <StyledBox>

@@ -103,16 +103,16 @@ const Footer = () => {
                       <Link className={"item"} to={"/"}>
                          <Typography variant={"subtitle1"}>{t('menu.home')}</Typography>
                       </Link>
-                      <Link className={"item"} to={"/"}>
+                      <Link className={"item"} to={"/about"}>
                          <Typography variant={"subtitle1"}>{t('menu.aboutUs')}</Typography>
                       </Link>
-                      <Link className={"item"} to={"/"}>
+                      <Link className={"item"} to={"/products"}>
                          <Typography variant={"subtitle1"}>{t('menu.products')}</Typography>
                       </Link>
-                      <Link className={"item"} to={"/"}>
+                      <Link className={"item"} to={"/services"}>
                          <Typography variant={"subtitle1"}>{t('menu.services')}</Typography>
                       </Link>
-                      <Link className={"item"} to={"/"}>
+                      <Link className={"item"} to={"/contact"}>
                          <Typography variant={"subtitle1"}>{t('menu.contacts')}</Typography>
                       </Link>
                    </StyledMenu>

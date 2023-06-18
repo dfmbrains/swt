@@ -134,7 +134,7 @@ const Footer = () => {
                    textAlign: "center"
                 }
              }}>
-                Copyright © {new Date().getFullYear()} Shanghai Wiswealth Technology Co. Ltd
+                Copyright © {new Date().getFullYear()} SHANGHAI WISWEALTH TECHNOLOGY CO.,LTD.
                 . {t('footer.allRightsReserved')}
              </Typography>
           </div>

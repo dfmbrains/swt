@@ -1,9 +1,12 @@
 import React from 'react';
-// import {productsData} from "../../data/products";
+import ProductsSection from "./sections/ProductsSection";
+import FormSection from "../../components/FormSection";
 
 const Products = () => {
    return (
        <>
+          <ProductsSection/>
+          <FormSection/>
        </>
    );
 };

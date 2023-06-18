@@ -1,14 +1,19 @@
 import React, {useState} from 'react';
 import StaticImg from '../assets/imgs/product.webp';
 
-const ImageComponent = ({src = "", alt, clx = "", fallbackSrc = StaticImg}) => {
+const ImageComponent = ({src = "", alt, clx = "", fallbackSrc = StaticImg, setIsLoading}) => {
    const [imageSrc, setImageSrc] = useState(src);
 
-   const handleImageError = () => {
+   const handleLoad = () => {
+      if (setIsLoading) {
+         setIsLoading(false);
+      }
+   };
+   const handleError = () => {
       setImageSrc(fallbackSrc);
    };
 
-   return <img className={clx} src={imageSrc} alt={alt} onError={handleImageError}/>;
+   return <img onLoad={handleLoad} className={clx} src={imageSrc} alt={alt} onError={handleError}/>;
 };
 
 export default ImageComponent;

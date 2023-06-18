@@ -1,4 +1,5 @@
 import {styled} from "@mui/material";
+import {FlexBox} from "./FlexBoxes";
 
 const StyledSection = styled('section')(({theme}) => ({
    padding: "30px 0",
@@ -21,4 +22,9 @@ const StyledSection = styled('section')(({theme}) => ({
    }
 }));
 
-export {StyledSection};
+const PaginationBox = styled(FlexBox)(() => ({
+   margin: "40px 0 0",
+   justifyContent: "flex-end"
+}));
+
+export {StyledSection, PaginationBox};

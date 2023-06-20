@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {StyledSection} from "./StyledComponents";
-import {Button, styled, TextField, Typography} from "@mui/material";
+import {styled, TextField, Typography} from "@mui/material";
+import {LoadingButton} from "@mui/lab";
 import {useTranslation} from "react-i18next";
+import emailjs from "@emailjs/browser";
+import {EMAIL_JS_PUBLIC_KEY, EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID_FOR_EMAIL} from "../helpers/constants";
 
 const StyledBox = styled(StyledSection)(() => ({
    margin: "30px 0 0",
@@ -30,17 +33,52 @@ const StyledForm = styled('form')(() => ({
 const FormSection = () => {
    const {t} = useTranslation()
 
+   const [email, setEmail] = useState('')
+   const [partNumber, setPartNumber] = useState('')
+
+   const [loading, setLoading] = useState(false);
+
+   const handleSubmit = (e) => {
+      e.preventDefault();
+      setLoading(true);
+
+      emailjs
+          .send(
+              EMAIL_JS_SERVICE_ID,
+              EMAIL_JS_TEMPLATE_ID_FOR_EMAIL,
+              {email, partNumber},
+              EMAIL_JS_PUBLIC_KEY
+          )
+          .then(
+              () => {
+                 setLoading(false);
+
+                 setEmail('');
+              },
+              (error) => {
+                 setLoading(false);
+                 console.error(error);
+              }
+          )
+          .catch((error) => {
+             setLoading(false);
+             console.error(error);
+          })
+   }
+
    return (
        <StyledBox>
           <Typography className="title" variant={"h3"}>{t('sections.emailForm')}</Typography>
           <Typography className="subtitle" variant={"h5"}>{t('formSection.subtitle')}</Typography>
 
-          <StyledForm>
+          <StyledForm onSubmit={handleSubmit}>
              <TextField fullWidth
                         type="text"
                         name="partNumber"
                         label={t('placeholders.partNumber')}
                         size={"small"}
+                        value={partNumber}
+                        onChange={(e) => setPartNumber(e.target.value)}
              />
              <TextField fullWidth
                         type="email"
@@ -48,8 +86,11 @@ const FormSection = () => {
                         label={t('placeholders.email')}
                         size={"small"}
                         required
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
              />
-             <Button type={"submit"} fullWidth variant={"contained"}>{t('buttons.send')}</Button>
+             <LoadingButton loading={loading} type={"submit"} fullWidth
+                            variant={"contained"}>{t('buttons.send')}</LoadingButton>
           </StyledForm>
        </StyledBox>
    );

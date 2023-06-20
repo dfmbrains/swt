@@ -7,6 +7,11 @@ import {useTranslation} from "react-i18next";
 
 const StyledBox = styled(StyledSection)(() => ({
    padding: "30px 0 60px",
+
+   "& .formTitle": {
+      textAlign: "center",
+      marginBottom: 8
+   }
 }));
 
 const StyledGrid = styled(Grid)(() => ({
@@ -20,7 +25,7 @@ const StyledGrid = styled(Grid)(() => ({
       margin: "8px 0 24px",
 
       "& a": {color: "#000"}
-   }
+   },
 }));
 
 const StyledForm = styled('form')(() => ({
@@ -42,20 +47,21 @@ const Contact = () => {
                    <StyledGrid item xs={6}>
                       <Typography className={"subtitle"} variant={"subtitle1"}>{t(`${tRootKey}.subtitle`)}</Typography>
 
-                      <Typography className={"text"} variant={"h6"}>{t(`${tRootKey}.support`)} 24/7</Typography>
-                      <FlexGap10 className={"contactRow"}>
-                         <Icon color={"primary"}>phone</Icon>
-                         <a href="tel:+8618521372646">
-                            <Typography variant={"subtitle1"}>+8618521372646</Typography>
-                         </a>
-                      </FlexGap10>
-
                       <Typography className={"text"}
                                   variant={"h6"}>{t(`${tRootKey}.ourLocation`)}:</Typography>
                       <FlexGap10 className={"contactRow"}>
                          <Icon color={"primary"}>location_on</Icon>
                          <Typography variant={"subtitle1"}>Building C, No. 888, West Huanhu 2nd Road, <br/> Lingang New
                             Area of China (Shanghai) Pilot Free Trade Zone</Typography>
+                      </FlexGap10>
+
+                      <Typography className={"text"} variant={"h6"}>{t("phoneNumber")}</Typography>
+                      <FlexGap10 className={"contactRow"}>
+                         <Icon color={"primary"}>phone</Icon>
+                         <a href="tel:+8618521372646">
+                            <Typography variant={"subtitle1"}>+86 185-2137-2646 (Whatsapp, Wechat,
+                               Telegram)</Typography>
+                         </a>
                       </FlexGap10>
 
                       <Typography mt={3} className={"text"}
@@ -69,6 +75,8 @@ const Contact = () => {
                    </StyledGrid>
 
                    <Grid item xs={6}>
+                      <Typography className={"formTitle"} variant={"h4"}>{t(`${tRootKey}.forApplication`)}</Typography>
+
                       <StyledForm>
                          <Grid container spacing={3}>
                             <Grid item xs={12}>

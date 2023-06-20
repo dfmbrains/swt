@@ -40,7 +40,8 @@ const ServicesSection = () => {
                        <StyledCard>
                           <Icon className={"icon"} color={"primary"}>{icon}</Icon>
 
-                          <Typography className="cardTitle" variant={"h5"}>{servicesTexts[idx].title}</Typography>
+                          <Typography className="cardTitle" variant={"h5"}>
+                             {servicesTexts[idx].title.toUpperCase()}</Typography>
                           <Typography className="cardSubtitle"
                                       variant={"subtitle2"}>{servicesTexts[idx].subtitle}</Typography>
                        </StyledCard>

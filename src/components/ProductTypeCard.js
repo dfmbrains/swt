@@ -1,14 +1,12 @@
 import React from 'react';
 import {styled, Typography} from "@mui/material";
 import ImageComponent from "./ImageComponent";
-import {useNavigate} from "react-router-dom";
 
 const StyledCard = styled('div')(({theme}) => ({
    padding: "16px 16px 24px",
    background: "#FFFFFF",
    border: "1px solid rgba(57, 115, 185, 0.3)",
    borderRadius: 12,
-   cursor: "pointer",
    transition: "0.15s",
    "&:hover": {
       borderColor: theme.palette.primary.main,
@@ -35,10 +33,8 @@ const StyledCard = styled('div')(({theme}) => ({
 }));
 
 const ProductTypeCard = ({productType}) => {
-   const navigate = useNavigate()
-
    return (
-       <StyledCard onClick={() => navigate(`/products?category=1`)}>
+       <StyledCard>
           <ImageComponent src={productType.img} alt={productType.title.ru}/>
           <Typography className="productTypeCardTitle" variant={"h5"}>{productType.title.ru}</Typography>
        </StyledCard>

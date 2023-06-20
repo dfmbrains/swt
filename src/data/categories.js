@@ -221,9 +221,19 @@ export const categories = [
       subcategories: handleSetSubcategories([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11])
    },
    {
-      title: {ru: 'Circuit Protection', en: 'Circuit Protection'},
-      id: 2,
-      subcategories: handleSetSubcategories([23, 24, 25, 26, 27, 28])
+      title: {ru: 'Filters', en: 'Filters'},
+      id: 7,
+      subcategories: handleSetSubcategories([12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22])
+   },
+   {
+      title: {ru: 'Inductors, Coils, Chokes', en: 'Inductors, Coils, Chokes'},
+      id: 9,
+      subcategories: handleSetSubcategories([82, 96, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108])
+   },
+   {
+      title: {ru: 'Resistors', en: 'Resistors'},
+      id: 13,
+      subcategories: handleSetSubcategories([123, 124, 125, 126, 127])
    },
    {
       title: {ru: 'Crystals, Oscillators, Resonators', en: 'Crystals, Oscillators, Resonators'},
@@ -241,27 +251,9 @@ export const categories = [
       subcategories: handleSetSubcategories([45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69])
    },
    {
-      title: {
-         ru: 'Power Supplies - External/Internal (Off-Board)',
-         en: 'Power Supplies - External/Internal (Off-Board)'
-      },
-      id: 6,
-      subcategories: handleSetSubcategories([70, 71, 72, 73, 74, 75, 76, 77, 78, 79])
-   },
-   {
-      title: {ru: 'Filters', en: 'Filters'},
-      id: 7,
-      subcategories: handleSetSubcategories([12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22])
-   },
-   {
       title: {ru: 'Integrated Circuits (ICs)', en: 'Integrated Circuits (ICs)'},
       id: 8,
       subcategories: handleSetSubcategories([80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97])
-   },
-   {
-      title: {ru: 'Inductors, Coils, Chokes', en: 'Inductors, Coils, Chokes'},
-      id: 9,
-      subcategories: handleSetSubcategories([82, 96, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108])
    },
    {
       title: {ru: 'Isolators', en: 'Isolators'},
@@ -274,20 +266,27 @@ export const categories = [
       subcategories: handleSetSubcategories([113, 114, 115, 116, 117, 118, 119, 120, 121])
    },
    {
-      title: {ru: 'Power Supplies - Board Mount', en: 'Power Supplies - Board Mount'},
-      id: 12,
-      subcategories: handleSetSubcategories([73, 76, 78, 122])
-   },
-   {
-      title: {ru: 'Resistors', en: 'Resistors'},
-      id: 13,
-      subcategories: handleSetSubcategories([123, 124, 125, 126, 127])
-   },
-
-   {
       title: {ru: 'Sensors, Transducers', en: 'Sensors, Transducers'},
       id: 14,
       subcategories: handleSetSubcategories([128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144])
+   },
+   {
+      title: {ru: 'Circuit Protection', en: 'Circuit Protection'},
+      id: 2,
+      subcategories: handleSetSubcategories([23, 24, 25, 26, 27, 28])
+   },
+   {
+      title: {
+         ru: 'Power Supplies - External/Internal (Off-Board)',
+         en: 'Power Supplies - External/Internal (Off-Board)'
+      },
+      id: 6,
+      subcategories: handleSetSubcategories([70, 71, 72, 73, 74, 75, 76, 77, 78, 79])
+   },
+   {
+      title: {ru: 'Power Supplies - Board Mount', en: 'Power Supplies - Board Mount'},
+      id: 12,
+      subcategories: handleSetSubcategories([73, 76, 78, 122])
    }
 ]
 

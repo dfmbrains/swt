@@ -63,7 +63,7 @@ const ApplicationsCard = ({application}) => {
    return (
        <StyledCard bgimage={application.img}>
           <div className={"applicationCardBox"}>
-             <Typography className="applicationCardTitle" variant={"h5"}>{application.title}</Typography>
+             <Typography className="applicationCardTitle" variant={"h4"}>{application.title}</Typography>
 
              <Typography className="applicationCardSubtitle"
                          variant={"body2"}>{application.subtitle}</Typography>

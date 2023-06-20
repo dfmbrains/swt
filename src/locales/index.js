@@ -7,11 +7,11 @@ import translationRu from './translationRu.json';
 import translationEn from './translationEn.json';
 
 const resources = {
-   "ru": {
-      translation: translationRu
-   },
    "en": {
       translation: translationEn
+   },
+   "ru": {
+      translation: translationRu
    }
 };
 
@@ -19,7 +19,7 @@ i18n
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
-       supportedLngs: ["ru", "en"],
+       supportedLngs: ["en", "ru"],
        fallbackLng: defaultAppLanguage,
        detection: i18DetectionConfigs,
        resources

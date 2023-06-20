@@ -2,6 +2,9 @@ import React, {useEffect, useRef} from 'react';
 import ScrollContainer from "react-indiana-drag-scroll";
 import {styled, Typography, useMediaQuery, useTheme} from "@mui/material";
 import SwipeImg1 from '../../../assets/imgs/swipeImg1.webp';
+import SwipeImg2 from '../../../assets/brand/office3.jpg';
+import SwipeImg3 from '../../../assets/brand/office4.jpg';
+import SwipeImg4 from '../../../assets/brand/office5.jpg';
 import {StyledSection} from "../../../components/StyledComponents";
 import {useTranslation} from "react-i18next";
 import ImageComponent from "../../../components/ImageComponent";
@@ -14,6 +17,7 @@ const StyledRow = styled(ScrollContainer)(({theme}) => ({
    "img": {
       objectFit: "cover",
       width: "calc(72% - 16px * 2 / 3)",
+      minWidth: "calc(72% - 16px * 2 / 3)",
       height: "430px",
       borderRadius: "12px"
    },
@@ -64,9 +68,10 @@ const HomeSwipeSection = () => {
           </div>
 
           <StyledRow ref={rowRef} className="messagesModal__menu" horizontal={true} vertical={false}>
+             <ImageComponent src={SwipeImg2} alt="img"/>
              <ImageComponent src={SwipeImg1} alt="img"/>
-             <ImageComponent src={SwipeImg1} alt="img"/>
-             <ImageComponent src={SwipeImg1} alt="img"/>
+             <ImageComponent src={SwipeImg3} alt="img"/>
+             <ImageComponent src={SwipeImg4} alt="img"/>
           </StyledRow>
        </StyledSection>
    );

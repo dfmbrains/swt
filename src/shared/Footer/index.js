@@ -1,10 +1,14 @@
 import React from 'react';
-import {Button, Icon, styled, Typography, useTheme} from "@mui/material";
+import {Button, ButtonGroup, Icon, IconButton, styled, Tooltip, Typography, useTheme} from "@mui/material";
 import LogoCompany from "../../assets/brand/logo-company-white.svg";
 import {FlexBetweenAlignStart, FlexBox} from "../../components/FlexBoxes";
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import ImageComponent from "../../components/ImageComponent";
+import WechatLogo from "../../assets/icons/wechat.png";
+import WhatsAppLogo from "../../assets/icons/whatsapp.png";
+import TelegramLogo from "../../assets/icons/telegram.png";
+import SkypeLogo from "../../assets/icons/skype.png";
 
 const StyledFooter = styled('footer')(({theme}) => ({
    padding: '24px 0',
@@ -18,6 +22,11 @@ const StyledFooter = styled('footer')(({theme}) => ({
    },
    "& .contactGap": {
       opacity: 0.8
+   },
+
+   "& .socialMedia": {
+      width: 24,
+      height: 24
    },
 
    [theme.breakpoints.down("md")]: {
@@ -38,7 +47,7 @@ const StyledFooter = styled('footer')(({theme}) => ({
 
 const StyledMenu = styled(FlexBox)(({theme}) => ({
    flexDirection: "column",
-   rowGap: "12px",
+   gap: "12px",
 
    [theme.breakpoints.down("md")]: {
       flexDirection: "row",
@@ -86,6 +95,11 @@ const Footer = () => {
    const theme = useTheme()
    const {t} = useTranslation()
 
+   const handleCopy = () => {
+      navigator.clipboard.writeText("+8618521372646")
+          .then(() => alert(t('phoneNumberCopied')))
+   }
+
    return (
        <StyledFooter>
           <div className="container">
@@ -124,6 +138,33 @@ const Footer = () => {
                       <Button color={"info"} href="mailto:info@wiswealth.com" startIcon={<Icon>email</Icon>}>
                          <Typography>info@wiswealth.com</Typography>
                       </Button>
+
+                      <ButtonGroup>
+                         <Tooltip title={"Wechat"} placement={"top"}>
+                            <IconButton onClick={handleCopy} color={"success"} className={"iconButton"}>
+                               <img className={"socialMedia"} src={WechatLogo} alt="wechat"/>
+                            </IconButton>
+                         </Tooltip>
+                         <Tooltip title={"Skype"} placement={"top"}>
+                            <IconButton target={"_blank"} href={"https://join.skype.com/invite/bibiwkabb"}
+                                        color={"primary"}
+                                        className={"iconButton"}>
+                               <img className={"socialMedia"} src={SkypeLogo} alt="Skype"/>
+                            </IconButton>
+                         </Tooltip>
+                         <Tooltip title={"Whatsapp"} placement={"top"}>
+                            <IconButton target={"_blank"} href={"https://wa.me/+8618521372646"} color={"success"}
+                                        className={"iconButton"}>
+                               <img className={"socialMedia"} src={WhatsAppLogo} alt="whatsapp"/>
+                            </IconButton>
+                         </Tooltip>
+                         <Tooltip title={"Telegram"} placement={"top"}>
+                            <IconButton target={"_blank"} href={"https://t.me/+8618521372646"} color={"primary"}
+                                        className={"iconButton"}>
+                               <img className={"socialMedia"} src={TelegramLogo} alt="telegram"/>
+                            </IconButton>
+                         </Tooltip>
+                      </ButtonGroup>
                    </StyledContactBox>
                 </StyledFlexBox>
              </FlexBetweenAlignStart>

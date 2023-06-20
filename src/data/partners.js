@@ -19,4 +19,13 @@ import Toshiba from '../assets/partners/toshiba.png';
 import Vishay from '../assets/partners/vishay.png';
 import Yageo from '../assets/partners/yageo.png';
 
-export const partners = [AnalogDevices, Avx, Diodes, Epson, Infineon, Jst, Kemet, Liteton, Microchip, Murata, Onsemi, OnSemiconductor, Rohm, Samsung, St, Tdk, TexasInstruments, Toshiba, Vishay, Yageo]
+import Abracon from '../assets/partners/abracon.png';
+import Altera from '../assets/partners/altera.png';
+import Epcos from '../assets/partners/epcos.png';
+import Fairchild from '../assets/partners/fairchild.png';
+import Fujitsu from '../assets/partners/fujitsu.png';
+import Maruwa from '../assets/partners/maruwa.png';
+import Micron from '../assets/partners/micron.png';
+import Mts from '../assets/partners/mts.png';
+
+export const partners = [AnalogDevices, Avx, Diodes, Epson, Infineon, Jst, Kemet, Liteton, Microchip, Murata, Onsemi, OnSemiconductor, Rohm, Samsung, St, Tdk, TexasInstruments, Toshiba, Vishay, Yageo, Abracon, Altera, Epcos, Fairchild, Fujitsu, Maruwa, Micron, Mts]

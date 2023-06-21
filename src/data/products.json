@@ -125133,5 +125133,905 @@
         "category": 14,
         "subcategory": 144,
         "id": 15769
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/TC33X%20SERIES.jpg",
+        "model": "TC33X-2-103E",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 10K OHM 0.1W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15770
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/TC33X%20SERIES.jpg",
+        "model": "TC33X-1-103E",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 10K OHM 0.1W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15771
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3306K%20SERIES.jpg",
+        "model": "3306K-1-103",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 10K OHM 0.2W PC PIN SIDE",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15772
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3361P%20SERIES.jpg",
+        "model": "3361P-1-103GLF",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 10K OHM 0.5W GW TOP ADJ",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15773
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3361P%20SERIES.jpg",
+        "model": "3361P-1-104GLF",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 100K OHM 0.5W GW TOP ADJ",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15774
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3361P%20SERIES.jpg",
+        "model": "3361P-1-503GLF",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 50K OHM 0.5W GW TOP ADJ",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15775
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3361P%20SERIES.jpg",
+        "model": "3361P-1-102GLF",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 1K OHM 0.5W GW TOP ADJ",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15776
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3361P%20SERIES.jpg",
+        "model": "3361P-1-504GLF",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 500K OHM 0.5W GW TOP ADJ",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15777
+    },
+    {
+        "image": "//media.digikey.com/Photos/Bourns%20Photos/MFG_PVG3A.jpg",
+        "model": "PVG3A201C01R00",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 200 OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15778
+    },
+    {
+        "image": "//media.digikey.com/Photos/Bourns%20Photos/MFG_PVG3A.jpg",
+        "model": "PVG3A204C01R00",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 200KOHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15779
+    },
+    {
+        "image": "//media.digikey.com/Photos/Bourns%20Photos/MFG_PVG3A.jpg",
+        "model": "PVG3A103C01R00",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 10K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15780
+    },
+    {
+        "image": "//media.digikey.com/Photos/Bourns%20Photos/MFG_PVG3A.jpg",
+        "model": "PVG3A104C01R00",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 100KOHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15781
+    },
+    {
+        "image": "//media.digikey.com/Photos/Bourns%20Photos/MFG_PVG3A.jpg",
+        "model": "PVG3A502C01R00",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 5K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15782
+    },
+    {
+        "image": "//media.digikey.com/Photos/TT%20Electronics%20BI/23BR.jpg",
+        "model": "23BR10KLFTR",
+        "company": "TT Electronics/BI",
+        "description": "TRIMMER 10K OHM 0.25W GW TOP ADJ",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15783
+    },
+    {
+        "image": "//media.digikey.com/Photos/TT%20Electronics%20BI/23BR.jpg",
+        "model": "23BR500LFTR",
+        "company": "TT Electronics/BI",
+        "description": "TRIMMER 500 OHM 0.25W GW TOP ADJ",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15784
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3313J%20SERIES.jpg",
+        "model": "3313J-1-104E",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 100K OHM 0.125W J LEAD",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15785
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3313J%20SERIES.jpg",
+        "model": "3313J-1-103E",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 10KOHM 0.125W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15786
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3313J%20SERIES.jpg",
+        "model": "3313J-1-503E",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 50KOHM 0.125W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15787
+    },
+    {
+        "image": "//media.digikey.com/Photos/TT%20Electronics%20BI/23AR.jpg",
+        "model": "23AR5KLFTR",
+        "company": "TT Electronics/BI",
+        "description": "TRIMMER 5K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15788
+    },
+    {
+        "image": "//media.digikey.com/Photos/TT%20Electronics%20BI/23AR.jpg",
+        "model": "23AR500LFTR",
+        "company": "TT Electronics/BI",
+        "description": "TRIMMER 500 OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15789
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3362P%20SERIES.jpg",
+        "model": "3362P-1-203LF",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 20K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15790
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3362P%20SERIES.jpg",
+        "model": "3362P-1-103LF",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 10K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15791
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/ST4ETB%20SERIES.jpg",
+        "model": "ST-4ETB102",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 1K OHM 0.25W GW TOP ADJ",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15792
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/ST4ETB%20SERIES.jpg",
+        "model": "ST-4ETB103",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 10K OHM 0.25W GW TOP ADJ",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15793
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/ST4ETA%20SERIES.jpg",
+        "model": "ST-4ETA502",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 5K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15794
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/ST4ETA%20SERIES.jpg",
+        "model": "ST-4ETA102",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 1K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15795
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/ST4ETA%20SERIES.jpg",
+        "model": "ST-4ETA203",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 20K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15796
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/ST4ETA%20SERIES.jpg",
+        "model": "ST-4ETA103",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 10K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15797
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/ST4ETB%20SERIES.jpg",
+        "model": "ST-4ETB202",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 2K OHM 0.25W GW TOP ADJ",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15798
+    },
+    {
+        "image": "//media.digikey.com/Photos/Sparkfun%20Elec%20%20Photos/MFG_COM-09806.jpg",
+        "model": "COM-09806",
+        "company": "SparkFun Electronics",
+        "description": "TRIMMER 10K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15799
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/ST32ETA%20SERIES.jpg",
+        "model": "ST-32ETA202",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 2K OHM 0.125W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15800
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/ST32ETB%20SERIES.jpg",
+        "model": "ST-32ETB502",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 5K OHM 0.125W GW TOP ADJ",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15801
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/ST32ETA%20SERIES.jpg",
+        "model": "ST-32ETA203",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 20KOHM 0.125W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15802
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/ST32ETA%20SERIES.jpg",
+        "model": "ST-32ETA504",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 500K OHM 0.125W J LEAD",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15803
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/ST32ETB%20SERIES.jpg",
+        "model": "ST-32ETB103",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 10K OHM 0.125W GW TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15804
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/ST32ETA%20SERIES.jpg",
+        "model": "ST-32ETA103",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 10KOHM 0.125W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15805
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/ST32ETA%20SERIES.jpg",
+        "model": "ST-32ETA502",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 5K OHM 0.125W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15806
+    },
+    {
+        "image": "//media.digikey.com/Photos/Bourns%20Photos/3314J%20SERIES.jpg",
+        "model": "3314J-1-502E",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 5K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15807
+    },
+    {
+        "image": "//media.digikey.com/Photos/Bourns%20Photos/3314J%20SERIES.jpg",
+        "model": "3314J-1-202E",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 2K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15808
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/ST32ETA%20SERIES.jpg",
+        "model": "ST-32ETA503",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 50KOHM 0.125W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15809
+    },
+    {
+        "image": "//media.digikey.com/Photos/Bourns%20Photos/3314J%20SERIES.jpg",
+        "model": "3314J-1-203E",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 20K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15810
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/CT6EP%20SERIES.jpg",
+        "model": "CT-6EP102",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 1K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15811
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/CT6EP%20SERIES.jpg",
+        "model": "CT-6EP202",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 2K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15812
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/CT6EP%20SERIES.jpg",
+        "model": "CT-6EP502",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 5K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15813
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/CT6EP%20SERIES.jpg",
+        "model": "CT-6EP103",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 10K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15814
+    },
+    {
+        "image": "//media.digikey.com/Photos/TT%20Electronics-Optek%20Photos/MFG_22AR.jpg",
+        "model": "22AR1KLFTR",
+        "company": "TT Electronics/BI",
+        "description": "TRIMMER 1K OHM 0.125W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15815
+    },
+    {
+        "image": "//media.digikey.com/Photos/TT%20Electronics-Optek%20Photos/MFG_22AR.jpg",
+        "model": "22AR100KLFTR",
+        "company": "TT Electronics/BI",
+        "description": "TRIMMER 100K OHM 0.125W J LEAD",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15816
+    },
+    {
+        "image": "//media.digikey.com/Photos/TT%20Electronics-Optek%20Photos/MFG_22AR.jpg",
+        "model": "22AR10KLFTR",
+        "company": "TT Electronics/BI",
+        "description": "TRIMMER 10KOHM 0.125W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15817
+    },
+    {
+        "image": "//media.digikey.com/Photos/TT%20Electronics-Optek%20Photos/MFG_22AR.jpg",
+        "model": "22AR20KLFTR",
+        "company": "TT Electronics/BI",
+        "description": "TRIMMER 20KOHM 0.125W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15818
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3386P%20SERIES.jpg",
+        "model": "3386P-1-104LF",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 100K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15819
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3386P%20SERIES.jpg",
+        "model": "3386P-1-103LF",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 10K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15820
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3386P%20SERIES.jpg",
+        "model": "3386P-1-502LF",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 5K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15821
+    },
+    {
+        "image": "//media.digikey.com/Photos/TT%20Electronics%20BI/25SR10KLF.JPG",
+        "model": "25SR10KLF",
+        "company": "TT Electronics/BI",
+        "description": "TRIMMER 10K OHM 0.5W PC PIN SIDE",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15822
+    },
+    {
+        "image": "//media.digikey.com/Photos/Bourns%20Photos/3314Z%20SERIES.jpg",
+        "model": "3314Z-1-103E",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 10KOHM 0.25W J LEAD SIDE",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15823
+    },
+    {
+        "image": "//media.digikey.com/Photos/Vishay%20Sfernice/TS53Y%20SERIES%20J%20LEAD.JPG",
+        "model": "TS53YJ104MR10",
+        "company": "Vishay Sfernice",
+        "description": "TRIMMER 100KOHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15824
+    },
+    {
+        "image": "//media.digikey.com/Photos/Vishay%20Sfernice/TS53Y%20SERIES%20J%20LEAD.JPG",
+        "model": "TS53YJ103MR10",
+        "company": "Vishay Sfernice",
+        "description": "TRIMMER 10K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15825
+    },
+    {
+        "image": "//media.digikey.com/Photos/Vishay%20Sfernice/TS53Y%20SERIES%20J%20LEAD.JPG",
+        "model": "TS53YJ502MR10",
+        "company": "Vishay Sfernice",
+        "description": "TRIMMER 5K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15826
+    },
+    {
+        "image": "//media.digikey.com/Photos/Amphenol%20Photos/N15TS-103A3030.jpg",
+        "model": "N15TS-103A3030",
+        "company": "Amphenol Piher Sensing Systems",
+        "description": "POT 10 K OHM LINEAR",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15827
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3214J%20SERIES.jpg",
+        "model": "3214J-1-503E",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 50KOHM 0.25W J LEAD SIDE",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15828
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3214J%20SERIES.jpg",
+        "model": "3214J-1-103E",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 10KOHM 0.25W J LEAD SIDE",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15829
+    },
+    {
+        "image": "//media.digikey.com/photos/Murata%20Photos/PV36W%20SERIES.jpg",
+        "model": "PV36W104C01B00",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 100K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15830
+    },
+    {
+        "image": "//media.digikey.com/photos/Murata%20Photos/PV36W%20SERIES.jpg",
+        "model": "PV36W103C01B00",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 10K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15831
+    },
+    {
+        "image": "//media.digikey.com/photos/Murata%20Photos/PV36W%20SERIES.jpg",
+        "model": "PV36W102C01B00",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 1K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15832
+    },
+    {
+        "image": "//media.digikey.com/photos/Murata%20Photos/PV36W%20SERIES.jpg",
+        "model": "PV36W203C01B00",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 20K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15833
+    },
+    {
+        "image": "//media.digikey.com/photos/Murata%20Photos/PV36W%20SERIES.jpg",
+        "model": "PV36W502C01B00",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 5K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15834
+    },
+    {
+        "image": "//media.digikey.com/photos/Murata%20Photos/PV36W%20SERIES.jpg",
+        "model": "PV36W202C01B00",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 2K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15835
+    },
+    {
+        "image": "//media.digikey.com/photos/Murata%20Photos/PV36W%20SERIES.jpg",
+        "model": "PV36W201C01B00",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 200 OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15836
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3296W%20SERIES.jpg",
+        "model": "3296W-1-103RLF",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 10K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15837
+    },
+    {
+        "image": "//media.digikey.com/Photos/TT%20Electronics%20BI/89PR1MEGLF.JPG",
+        "model": "89PR10KLF",
+        "company": "TT Electronics/BI",
+        "description": "TRIMMER 10KOHM 0.75W PC PIN SIDE",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15838
+    },
+    {
+        "image": "//media.digikey.com/Photos/TT%20Electronics%20BI/67_Series_TopAdjustment.jpg",
+        "model": "67WR10KLF",
+        "company": "TT Electronics/BI",
+        "description": "TRIMMER 10K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15839
+    },
+    {
+        "image": "//media.digikey.com/photos/Murata%20Photos/PVG5A%20SERIES.jpg",
+        "model": "PVG5A203C03R00",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 20K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15840
+    },
+    {
+        "image": "//media.digikey.com/photos/Murata%20Photos/PVG5A%20SERIES.jpg",
+        "model": "PVG5A103C03R00",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 10K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15841
+    },
+    {
+        "image": "//media.digikey.com/photos/Murata%20Photos/PVG5A%20SERIES.jpg",
+        "model": "PVG5A503C03R00",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 50K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15842
+    },
+    {
+        "image": "//media.digikey.com/photos/Murata%20Photos/PVG5A%20SERIES.jpg",
+        "model": "PVG5A502C03R00",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 5K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15843
+    },
+    {
+        "image": "//media.digikey.com/photos/Murata%20Photos/PVG5A%20SERIES.jpg",
+        "model": "PVG5A104C03R00",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 100KOHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15844
+    },
+    {
+        "image": "//media.digikey.com/photos/Murata%20Photos/PVG5A%20SERIES.jpg",
+        "model": "PVG5A202C03R00",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 2K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15845
+    },
+    {
+        "image": "//media.digikey.com/Photos/Bourns%20Photos/Trimpot-3006-Series.jpg",
+        "model": "3006P-1-203LF",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 20KOHM 0.75W PC PIN SIDE",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15846
+    },
+    {
+        "image": "//media.digikey.com/Photos/Bourns%20Photos/Trimpot-3006-Series.jpg",
+        "model": "3006P-1-102LF",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 1K OHM 0.75W PC PIN SIDE",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15847
+    },
+    {
+        "image": "//media.digikey.com/Photos/Bourns%20Photos/Trimpot-3006-Series.jpg",
+        "model": "3006P-1-502LF",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 5K OHM 0.75W PC PIN SIDE",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15848
+    },
+    {
+        "image": "//media.digikey.com/Photos/Bourns%20Photos/Trimpot-3006-Series.jpg",
+        "model": "3006P-1-103LF",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 10KOHM 0.75W PC PIN SIDE",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15849
+    },
+    {
+        "image": "//media.digikey.com/Photos/Bourns%20Photos/Trimpot-3006-Series.jpg",
+        "model": "3006P-1-201LF",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 200OHM 0.75W PC PIN SIDE",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15850
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3214W%20SERIES.jpg",
+        "model": "3214W-1-103E",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 10K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15851
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3214W%20SERIES.jpg",
+        "model": "3214W-1-102E",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 1K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15852
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3214W%20SERIES.jpg",
+        "model": "3214W-1-502E",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 5K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15853
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3214W%20SERIES.jpg",
+        "model": "3214W-1-202E",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 2K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15854
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3214W%20SERIES.jpg",
+        "model": "3214W-1-503E",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 50K OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15855
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3214W%20SERIES.jpg",
+        "model": "3214W-1-104E",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 100KOHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15856
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3214W%20SERIES.jpg",
+        "model": "3214W-1-201E",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 200 OHM 0.25W J LEAD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15857
+    },
+    {
+        "image": "//media.digikey.com/photos/Vishay%20Photos/T93Y%20Series.jpg",
+        "model": "T93YA503KT20",
+        "company": "Vishay Sfernice",
+        "description": "TRIMMER 50K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15858
+    },
+    {
+        "image": "//media.digikey.com/photos/Vishay%20Photos/T93Y%20Series.jpg",
+        "model": "T93YA103KT20",
+        "company": "Vishay Sfernice",
+        "description": "TRIMMER 10K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15859
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/CT94EY%20SERIES.jpg",
+        "model": "CT-94EY103",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 10K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15860
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/CT94EW%20SERIES.jpg",
+        "model": "CT-94EW104",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 100K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15861
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/CT94EW%20SERIES.jpg",
+        "model": "CT-94EW103",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 10K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15862
+    },
+    {
+        "image": "//media.digikey.com/photos/Copal%20Photos/CT94EX%20SERIES.jpg",
+        "model": "CT-94EX103",
+        "company": "Nidec Components Corporation",
+        "description": "TRIMMER 10K OHM 0.5W PC PIN SIDE",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15863
+    },
+    {
+        "image": "//media.digikey.com/photos/Murata%20Photos/PV37W%20SERIES.jpg",
+        "model": "PV37W502C01B00",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 5K OHM 0.25W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15864
+    },
+    {
+        "image": "//media.digikey.com/photos/Murata%20Photos/PV37W%20SERIES.jpg",
+        "model": "PV37W103C01B00",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 10K OHM 0.25W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15865
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3214X-1-201E.JPG",
+        "model": "3214X-1-103E",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 10K OHM 0.25W GW TOP ADJ",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15866
+    },
+    {
+        "image": "//media.digikey.com/photos/Bourns%20Photos/3214X-1-201E.JPG",
+        "model": "3214X-1-201E",
+        "company": "Bourns Inc.",
+        "description": "TRIMMER 200 OHM 0.25W GW TOP ADJ",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15867
+    },
+    {
+        "image": "//media.digikey.com/Photos/TT%20Electronics%20BI/68WR1MEGLF.JPG",
+        "model": "68WR10KLF",
+        "company": "TT Electronics/BI",
+        "description": "TRIMMER 10K OHM 0.5W PC PIN TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15868
+    },
+    {
+        "image": "//media.digikey.com/Photos/TT%20Electronics%20BI/MFG_84-Model-Series.jpg",
+        "model": "84WR20KLFTR",
+        "company": "TT Electronics/BI",
+        "description": "TRIMMER 20K OHM 0.25W SMD TOP",
+        "category": 15,
+        "subcategory": 145,
+        "id": 15869
     }
 ]

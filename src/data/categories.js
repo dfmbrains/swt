@@ -213,6 +213,7 @@ export const subcategories = [
    {title: {ru: 'Specialized Sensors', en: 'Specialized Sensors'}, id: 142},
    {title: {ru: 'Strain Gauges', en: 'Strain Gauges'}, id: 143},
    {title: {ru: 'Ultrasonic Receivers Transmitters', en: 'Ultrasonic Receivers Transmitters'}, id: 144},
+   {title: {ru: 'Trimmer Potentiometers', en: 'Trimmer Potentiometers'}, id: 145},
 ]
 export const categories = [
    {
@@ -229,6 +230,11 @@ export const categories = [
       title: {ru: 'Inductors, Coils, Chokes', en: 'Inductors, Coils, Chokes'},
       id: 9,
       subcategories: handleSetSubcategories([82, 96, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108])
+   },
+   {
+      title: {ru: 'Trimmer Potentiometers', en: 'Trimmer Potentiometers'},
+      id: 15,
+      subcategories: handleSetSubcategories([145])
    },
    {
       title: {ru: 'Resistors', en: 'Resistors'},

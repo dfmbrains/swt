@@ -47,11 +47,11 @@ const AboutSection1 = () => {
                 </Grid>
                 <Grid item xs={12}>
                    <Typography sx={{textAlign: "justify", textIndent: "20px", lineHeight: 1.3}} className={"aboutText"}
-                               mt={2} variant={"subtitle1"}>{t(`${tRootKey}.text.part1`)}</Typography>
+                               mt={2} variant={"h5"}>{t(`${tRootKey}.text.part1`)}</Typography>
                    <Typography sx={{textAlign: "justify", textIndent: "20px", lineHeight: 1.3}} className={"aboutText"}
-                               my={1} variant={"subtitle1"}>{t(`${tRootKey}.text.part2`)}</Typography>
+                               my={1} variant={"h5"}>{t(`${tRootKey}.text.part2`)}</Typography>
                    <Typography sx={{textAlign: "justify", textIndent: "20px", lineHeight: 1.3}} className={"aboutText"}
-                               variant={"subtitle1"}>{t(`${tRootKey}.text.part3`)}</Typography>
+                               variant={"h5"}>{t(`${tRootKey}.text.part3`)}</Typography>
                 </Grid>
              </Grid>
           </div>

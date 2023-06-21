@@ -11,9 +11,9 @@ const Contact = () => {
           <StyledSection>
              <YMaps query={{lang: "en_US"}} preload={true}>
                 <Map controls={["zoomControl"]} height={"300px"} width={"100%"}
-                     state={{center: [43, 73], zoom: 17}}>
+                     state={{center: [30.900832, 121.918014], zoom: 10}}>
                    <Clusterer>
-                      <Placemark geometry={[43, 73]} options={{iconColor: "#3973B9"}}/>
+                      <Placemark geometry={[30.900832, 121.918014]} options={{iconColor: "#3973B9"}}/>
                    </Clusterer>
                 </Map>
              </YMaps>

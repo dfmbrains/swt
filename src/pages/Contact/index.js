@@ -3,7 +3,7 @@ import {StyledSection} from "../../components/StyledComponents";
 import {Grid, Icon, styled, TextField, Typography} from "@mui/material";
 import {FlexGap10} from "../../components/FlexBoxes";
 import BenefitsSection from "../../components/BenefitsSection";
-import {useTranslation} from "react-i18next";
+import {Trans, useTranslation} from "react-i18next";
 import emailjs from "@emailjs/browser";
 import {EMAIL_JS_PUBLIC_KEY, EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID_FOR_CONTACT} from "../../helpers/constants";
 import {LoadingButton} from "@mui/lab";
@@ -82,8 +82,9 @@ const Contact = () => {
                                   variant={"h6"}>{t(`${tRootKey}.ourLocation`)}:</Typography>
                       <FlexGap10 className={"contactRow"}>
                          <Icon color={"primary"}>location_on</Icon>
-                         <Typography variant={"subtitle1"}>Building C, No. 888, West Huanhu 2nd Road, <br/> Lingang New
-                            Area of China (Shanghai) Pilot Free Trade Zone</Typography>
+                         <Typography variant={"subtitle1"}>
+                            <Trans i18nKey={"companyAddress"} components={{br: <br/>}}/>
+                         </Typography>
                       </FlexGap10>
 
                       <Typography className={"text"} variant={"h6"}>{t("phoneNumber")}</Typography>

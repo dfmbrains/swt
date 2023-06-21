@@ -12,6 +12,7 @@ import ImageComponent from "../../../components/ImageComponent";
 const StyledRow = styled(ScrollContainer)(({theme}) => ({
    display: "flex",
    alignItems: "center",
+   overflow: "auto !important",
    columnGap: "16px",
 
    "img": {

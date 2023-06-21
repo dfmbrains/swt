@@ -9,7 +9,7 @@ const StyledCard = styled('div')(() => ({
    height: "100%",
 
    "& .icon": {
-      fontSize: 42
+      fontSize: 56
    },
 
    "& .cardTitle": {

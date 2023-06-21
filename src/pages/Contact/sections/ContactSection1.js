@@ -89,7 +89,7 @@ const ContactSection1 = () => {
                    <FlexGap10 className={"contactRow"}>
                       <Icon color={"primary"}>phone</Icon>
                       <a href="tel:+8618521372646">
-                         <Typography variant={"subtitle1"}>+86 185-2137-2646 (Whatsapp, Wechat,
+                         <Typography variant={"subtitle1"}>+8618521372646 (Whatsapp, Wechat,
                             Telegram)</Typography>
                       </a>
                    </FlexGap10>

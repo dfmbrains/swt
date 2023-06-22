@@ -10,11 +10,7 @@ import {email, menu, phoneNumber} from "../../helpers/constants";
 import Search from "../Header/components/Search";
 import {NavLink} from "react-router-dom";
 
-const StyledBurger = styled('div')(({theme}) => ({
-   position: "fixed",
-   zIndex: theme.zIndex.modal,
-   left: 0,
-   top: 0,
+const StyledBurger = styled('div')(() => ({
    width: "100vw",
    height: "100vh",
 

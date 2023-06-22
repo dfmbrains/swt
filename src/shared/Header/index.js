@@ -1,20 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
-   Button,
    Icon,
    IconButton,
-   InputAdornment,
-   styled,
-   TextField,
-   Typography,
+   styled, Typography,
    useMediaQuery,
    useTheme
 } from "@mui/material";
 import {Link, NavLink} from "react-router-dom";
 import LogoCompany from '../../assets/brand/logo-company.svg'
 import {FlexBetweenAlignCenter, FlexBox, FlexGap10} from "../../components/FlexBoxes";
-import {useTranslation} from "react-i18next";
 import ImageComponent from "../../components/ImageComponent";
+import Burger from "../Burger";
+import ChangeLangButton from "./components/ChangeLangButton";
+import Search from "./components/Search";
+import {menu} from "../../helpers/constants";
+import {useTranslation} from "react-i18next";
 
 const StyledHeader = styled('header')(({theme}) => ({
    padding: '24px 0',
@@ -22,16 +22,20 @@ const StyledHeader = styled('header')(({theme}) => ({
    "& .logo": {
       width: "230px"
    },
+   "& .search": {
+      width: "230px",
+      margin: "0 0 15px",
+   },
 
    [theme.breakpoints.down("lg")]: {
       padding: '16px 0',
+
       "& .logo": {
          width: "200px"
-      }
-   },
-   [theme.breakpoints.down("md")]: {
-      "& .logo": {
-         width: "180px"
+      },
+      "& .search": {
+         width: "200px",
+         margin: "0 0 12px"
       }
    }
 }));
@@ -57,81 +61,53 @@ const StyledMenu = styled(StyledFlexBox)(({theme}) => ({
    }
 }));
 
-const StyledSearchTextField = styled(TextField)(({theme}) => ({
-   width: "230px",
-   margin: "0 0 15px",
-
-   [theme.breakpoints.down("lg")]: {
-      width: "200px",
-      margin: "0 0 12px"
-   },
-   [theme.breakpoints.down("md")]: {
-      width: "180px"
-   },
-}));
-
 const Header = () => {
-   const {t, i18n} = useTranslation()
+   const {t} = useTranslation()
    const theme = useTheme()
 
    const isLaptop = useMediaQuery(theme.breakpoints.up("md"));
 
+   const [isBurgerOpen, setIsBurgerOpen] = useState(false)
+
    return (
-       <StyledHeader>
-          <div className="container">
-             <FlexBetweenAlignCenter>
-                <Link to={"/"}>
-                   <ImageComponent className="logo" src={LogoCompany} alt="swt"/>
-                </Link>
-                <StyledFlexBox>
-                   {isLaptop ? (
-                       <>
-                          <StyledMenu>
-                             <NavLink className="item" to={"/"}>
-                                <Typography variant={"subtitle1"}>{t('menu.home')}</Typography>
-                             </NavLink>
-                             <NavLink className="item" to={"/about"}>
-                                <Typography variant={"subtitle1"}>{t('menu.aboutUs')}</Typography>
-                             </NavLink>
-                             <NavLink className="item" to={"/products"}>
-                                <Typography variant={"subtitle1"}>{t('menu.products')}</Typography>
-                             </NavLink>
-                             <NavLink className="item" to={"/services"}>
-                                <Typography variant={"subtitle1"}>{t('menu.services')}</Typography>
-                             </NavLink>
-                             <NavLink className="item" to={"/contact"}>
-                                <Typography variant={"subtitle1"}>{t('menu.contacts')}</Typography>
-                             </NavLink>
-                          </StyledMenu>
-                          <FlexGap10>
-                             <StyledSearchTextField
-                                 fullWidth
-                                 type="text"
-                                 name="search"
-                                 label={t('placeholders.search')}
-                                 size={"small"}
-                                 variant={"standard"}
-                                 InputProps={{
-                                    endAdornment: <InputAdornment position="end"><Icon
-                                        color={"primary"}>search</Icon></InputAdornment>,
-                                 }}
-                             />
-                             <Button onClick={() => i18n.changeLanguage(t('currentLanguage') === 'ru' ? 'en' : 'ru')}
-                                     variant={"text"} color={"secondary"} size={isLaptop ? "small" : 'medium'}
-                                     startIcon={<Icon>language</Icon>}>
-                                <Typography variant="subtitle2">{t('currentLanguage').toUpperCase()}</Typography>
-                             </Button>
-                          </FlexGap10>
-                       </>
-                   ) : (
-                       <IconButton color={"primary"}>
-                          <Icon>menu</Icon>
-                       </IconButton>
-                   )}
-                </StyledFlexBox>
-             </FlexBetweenAlignCenter>
-          </div>
-       </StyledHeader>
+       <>
+          <StyledHeader>
+             <div className="container">
+                <FlexBetweenAlignCenter>
+                   <Link to={"/"}>
+                      <ImageComponent clx="logo" src={LogoCompany} alt="swt"/>
+                   </Link>
+                   <StyledFlexBox>
+                      {isLaptop ? (
+                          <>
+                             <StyledMenu>
+                                {menu.map((item, idx) => (
+                                    <NavLink key={idx} className="item" to={item.link}>
+                                       <Typography variant={"subtitle1"}>{t(item.title)}</Typography>
+                                    </NavLink>
+                                ))}
+                             </StyledMenu>
+                             <FlexGap10>
+                                <div className="search">
+                                   <Search variant={"standard"}/>
+                                </div>
+                                <ChangeLangButton color={"secondary"}/>
+                             </FlexGap10>
+                          </>
+                      ) : (
+                          <IconButton onClick={() => setIsBurgerOpen(true)} color={"primary"}>
+                             <Icon>menu</Icon>
+                          </IconButton>
+                      )}
+                   </StyledFlexBox>
+                </FlexBetweenAlignCenter>
+             </div>
+          </StyledHeader>
+
+          {!isLaptop && (
+              <Burger isOpen={isBurgerOpen} handleClose={() => setIsBurgerOpen(false)}/>
+          )}
+       </>
    );
 };
 

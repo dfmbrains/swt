@@ -6,7 +6,7 @@ export const themeOptions = (theme) => {
             contrastText: '#FFFFFF'
          },
          secondary: {
-            main: '#000000',
+            main: 'rgba(53, 65, 77, 1)',
             contrastText: '#F18200'
          },
          info: {

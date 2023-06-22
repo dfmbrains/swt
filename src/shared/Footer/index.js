@@ -9,6 +9,7 @@ import WechatLogo from "../../assets/icons/wechat.png";
 import WhatsAppLogo from "../../assets/icons/whatsapp.png";
 import TelegramLogo from "../../assets/icons/telegram.png";
 import SkypeLogo from "../../assets/icons/skype.png";
+import {email, phoneNumber} from "../../helpers/constants";
 
 const StyledFooter = styled('footer')(({theme}) => ({
    padding: '24px 0',
@@ -38,7 +39,7 @@ const StyledFooter = styled('footer')(({theme}) => ({
       padding: '24px 0 16px',
 
       "& .logo": {
-         width: "200px",
+         width: "220px",
          display: "block",
          margin: "0 auto"
       },
@@ -77,7 +78,7 @@ const StyledFlexBox = styled(FlexBox)(({theme}) => ({
    }
 }));
 
-const StyledContactBox = styled('div')(() => ({
+const StyledContactBox = styled('div')(({theme}) => ({
    "& .MuiTypography-root": {
       textTransform: "lowercase"
    },
@@ -88,7 +89,21 @@ const StyledContactBox = styled('div')(() => ({
    display: "flex",
    flexDirection: "column",
    width: "100%",
-   rowGap: "8px"
+   rowGap: "8px",
+
+   [theme.breakpoints.down("sm")]: {
+      flexDirection: "row",
+      flexWrap: "wrap",
+      rowGap: 16,
+
+      "& .phoneNumber": {
+         width: "50%"
+      },
+      "& .MuiButtonGroup-root": {
+         width: "100%",
+         justifyContent: "center"
+      }
+   }
 }));
 
 const Footer = () => {
@@ -96,7 +111,7 @@ const Footer = () => {
    const {t} = useTranslation()
 
    const handleCopy = () => {
-      navigator.clipboard.writeText("+8618521372646")
+      navigator.clipboard.writeText(phoneNumber)
           .then(() => alert(t('phoneNumberCopied')))
    }
 
@@ -111,7 +126,7 @@ const Footer = () => {
                    width: "100%"
                 }
              }}>
-                <ImageComponent className="logo" src={LogoCompany} alt="swt"/>
+                <ImageComponent clx="logo" src={LogoCompany} alt="swt"/>
                 <StyledFlexBox>
                    <StyledMenu>
                       <Link className={"item"} to={"/"}>
@@ -132,11 +147,13 @@ const Footer = () => {
                    </StyledMenu>
 
                    <StyledContactBox>
-                      <Button color={"info"} href="tel:+8618521372646" startIcon={<Icon>phone</Icon>}>
-                         <Typography>+8618521372646</Typography>
+                      <Button className={"phoneNumber"} color={"info"} href={`tel:${phoneNumber}`}
+                              startIcon={<Icon>phone</Icon>}>
+                         <Typography>{phoneNumber}</Typography>
                       </Button>
-                      <Button color={"info"} href="mailto:info@wiswealth.com" startIcon={<Icon>email</Icon>}>
-                         <Typography>info@wiswealth.com</Typography>
+                      <Button className={"phoneNumber"} color={"info"} href={`mailto:${email}`}
+                              startIcon={<Icon>email</Icon>}>
+                         <Typography>{email}</Typography>
                       </Button>
 
                       <ButtonGroup>
@@ -175,8 +192,8 @@ const Footer = () => {
                    textAlign: "center"
                 }
              }}>
-                Copyright © {new Date().getFullYear()} SHANGHAI WISWEALTH TECHNOLOGY CO.,LTD.
-                . {t('footer.allRightsReserved')}
+                Copyright © {new Date().getFullYear()} SHANGHAI WISWEALTH TECHNOLOGY
+                CO., LTD. {t('footer.allRightsReserved')}
              </Typography>
           </div>
        </StyledFooter>

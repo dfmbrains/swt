@@ -4,7 +4,13 @@ import {FlexGap10} from "../../../components/FlexBoxes";
 import {Trans, useTranslation} from "react-i18next";
 import {LoadingButton} from "@mui/lab";
 import emailjs from "@emailjs/browser";
-import {EMAIL_JS_PUBLIC_KEY, EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID_FOR_CONTACT} from "../../../helpers/constants";
+import {
+   email,
+   EMAIL_JS_PUBLIC_KEY,
+   EMAIL_JS_SERVICE_ID,
+   EMAIL_JS_TEMPLATE_ID_FOR_CONTACT,
+   phoneNumber
+} from "../../../helpers/constants";
 import {StyledSection} from "../../../components/StyledComponents";
 
 const StyledBox = styled(StyledSection)(() => ({
@@ -88,9 +94,8 @@ const ContactSection1 = () => {
                    <Typography className={"text"} variant={"h6"}>{t("phoneNumber")}</Typography>
                    <FlexGap10 className={"contactRow"}>
                       <Icon color={"primary"}>phone</Icon>
-                      <a href="tel:+8618521372646">
-                         <Typography variant={"subtitle1"}>+8618521372646 (Whatsapp, Wechat,
-                            Telegram)</Typography>
+                      <a href={`tel:${phoneNumber}`}>
+                         <Typography variant={"subtitle1"}>{phoneNumber} (Whatsapp, Wechat, Telegram)</Typography>
                       </a>
                    </FlexGap10>
 
@@ -98,8 +103,8 @@ const ContactSection1 = () => {
                                variant={"h6"}>{t(`${tRootKey}.writeUs`)}:</Typography>
                    <FlexGap10 className={"contactRow"}>
                       <Icon color={"primary"}>email</Icon>
-                      <a href="mailto:info@wiswealth.com">
-                         <Typography variant={"subtitle1"}>info@wiswealth.com</Typography>
+                      <a href={`mailto:${email}`}>
+                         <Typography variant={"subtitle1"}>{email}</Typography>
                       </a>
                    </FlexGap10>
                 </StyledGrid>

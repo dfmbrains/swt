@@ -18,6 +18,10 @@ const StyledBox = styled(StyledSection)(({theme}) => ({
       "&:not(:last-child)": {
          marginBottom: "15px"
       }
+   },
+
+   [theme.breakpoints.down("sm")]: {
+      padding: "50px 0",
    }
 }));
 

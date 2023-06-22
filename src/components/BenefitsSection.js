@@ -11,14 +11,19 @@ const StyledBox = styled(StyledSection)(() => ({
 }));
 
 const StyledCard = styled('div')(() => ({
+   display: "flex",
+   flexDirection: "column",
+   alignItems: "center",
    "& .cardTitle": {
       margin: "15px 0 10px",
-      fontWeight: "600"
+      fontWeight: "600",
+      textAlign: "center"
    },
    "& h6": {
       marginBottom: "10px",
       fontWeight: "400",
-      color: "#737373"
+      color: "#737373",
+      textAlign: "center"
    },
    "& .icon": {
       fontSize: 36
@@ -35,9 +40,9 @@ const BenefitsSection = () => {
           <div className="container">
              <Typography className="title" variant={"h3"}>{t('sections.ourBenefits')}</Typography>
 
-             <Grid container spacing={5}>
+             <Grid container spacing={{md: 5, xs: 4}}>
                 {data.map((el, idx) => (
-                    <Grid key={idx} item xs={4}>
+                    <Grid key={idx} item md={4} xs={12}>
                        <StyledCard>
                           <Icon color={"primary"} className={"icon"}>{el}</Icon>
 

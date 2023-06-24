@@ -1,7 +1,7 @@
 import {Box, Button, styled} from "@mui/material";
 import React from "react";
 import {Link, useNavigate} from "react-router-dom";
-import Logo from '../../assets/brand/logo-company.svg'
+import Logo from '../../assets/brand/logo-company-primary.svg'
 import NotFoundImg from '../../assets/icons/404.svg'
 
 const FlexBox = styled(Box)(() => ({

@@ -7,7 +7,7 @@ import {
    useTheme
 } from "@mui/material";
 import {Link, NavLink} from "react-router-dom";
-import LogoCompany from '../../assets/brand/logo-company.svg'
+import LogoCompany from '../../assets/brand/logo-company-primary.svg'
 import {FlexBetweenAlignCenter, FlexBox, FlexGap10} from "../../components/FlexBoxes";
 import ImageComponent from "../../components/ImageComponent";
 import Burger from "../Burger";

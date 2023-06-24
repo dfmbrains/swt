@@ -2,7 +2,7 @@ import React from 'react';
 import {Box, Button, Drawer, Icon, IconButton, styled, Typography, useTheme} from "@mui/material";
 import ImageComponent from "../../components/ImageComponent";
 import LightLogoCompany from "../../assets/brand/logo-company-white.svg";
-import PrimaryLogoCompany from "../../assets/brand/logo-company.svg";
+import PrimaryLogoCompany from "../../assets/brand/logo-company-primary.svg";
 import {FlexBetweenAlignCenter, FlexBox, FlexGap10} from "../../components/FlexBoxes";
 import ChangeLangButton from "../Header/components/ChangeLangButton";
 import {useTranslation} from "react-i18next";

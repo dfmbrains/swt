@@ -29,28 +29,28 @@ const AboutSection1 = () => {
           <div className="container">
              <Typography className={"title"} variant={"h3"}>{t('sections.aboutUs')}</Typography>
 
-             <Grid container spacing={1}>
-                <Grid item xs={4}>
+             <Grid container spacing={{md: 1, xs: 2}}>
+                <Grid item md={4} xs={12}>
                    <StyledImgBox>
                       <ImageComponent src={CompanyImg} alt="company"/>
                    </StyledImgBox>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item md={4} xs={12}>
                    <StyledImgBox>
                       <ImageComponent src={Office1Img} alt="company"/>
                    </StyledImgBox>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item md={4} xs={12}>
                    <StyledImgBox>
                       <ImageComponent src={Office2Img} alt="company"/>
                    </StyledImgBox>
                 </Grid>
                 <Grid item xs={12}>
-                   <Typography sx={{textAlign: "justify", textIndent: "20px", lineHeight: 1.3}} className={"aboutText"}
-                               mt={2} variant={"h5"}>{t(`${tRootKey}.text.part1`)}</Typography>
-                   <Typography sx={{textAlign: "justify", textIndent: "20px", lineHeight: 1.3}} className={"aboutText"}
-                               my={1} variant={"h5"}>{t(`${tRootKey}.text.part2`)}</Typography>
-                   <Typography sx={{textAlign: "justify", textIndent: "20px", lineHeight: 1.3}} className={"aboutText"}
+                   <Typography sx={{textAlign: "justify", textIndent: "20px", lineHeight: 1.3}} mt={2}
+                               variant={"h5"}>{t(`${tRootKey}.text.part1`)}</Typography>
+                   <Typography sx={{textAlign: "justify", textIndent: "20px", lineHeight: 1.3}} my={1}
+                               variant={"h5"}>{t(`${tRootKey}.text.part2`)}</Typography>
+                   <Typography sx={{textAlign: "justify", textIndent: "20px", lineHeight: 1.3}}
                                variant={"h5"}>{t(`${tRootKey}.text.part3`)}</Typography>
                 </Grid>
              </Grid>

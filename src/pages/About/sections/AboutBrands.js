@@ -21,13 +21,13 @@ const StyledUl = styled('ul')(() => ({
 const AboutBrands = () => {
    const {t} = useTranslation()
 
-   const partnerText = t('about.partners', {returnObjects: true})
+   const partnerText = t('about.partners', {returnObjects: true}) || []
 
    return (
        <StyledSection>
           <div className="container">
              <Typography className="title" variant={"h3"}>{t('sections.brands')}</Typography>
-             <StyledUl mb={4} sx={{width: "70%"}}>
+             <StyledUl mb={{md: 4, xs: 2}} sx={{width: {md: "70%", xs: "100%"}}}>
                 {partnerText.map((part, idx) => (
                     <li>
                        <Typography variant={"h5"} key={idx}>{part}</Typography>
@@ -35,9 +35,9 @@ const AboutBrands = () => {
                 ))}
              </StyledUl>
 
-             <Grid container columnSpacing={2}>
+             <Grid container columnSpacing={{md: 2, xs: 0}}>
                 {partners.map((partner, idx) => (
-                    <Grid item xs={3}>
+                    <Grid item mt={{xs: idx !== 0 && idx !== 1 ? -8 : 0, sm: 0}} md={3} xs={6}>
                        <StyledImg key={idx} src={partner} alt="sumsung"/>
                     </Grid>
                 ))}

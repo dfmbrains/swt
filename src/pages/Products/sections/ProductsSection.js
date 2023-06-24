@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Grid, Pagination, Tab, Tabs, Typography} from "@mui/material";
+import {Grid, Pagination, Tab, Tabs, Typography, useMediaQuery, useTheme} from "@mui/material";
 import {useTranslation} from "react-i18next";
 import {StyledSection, PaginationBox} from "../../../components/StyledComponents";
 import {categories} from "../../../data/categories";
@@ -18,7 +18,10 @@ const pageSize = 15
 
 const ProductsSection = () => {
    const {t} = useTranslation()
+   const theme = useTheme()
    const [searchParams, setSearchParams] = useSearchParams()
+
+   const isLaptop = useMediaQuery(theme.breakpoints.up("md"));
 
    const [products, setProducts] = useState([])
    const [productsByCategory, setProductsByCategory] = useState([])
@@ -59,14 +62,16 @@ const ProductsSection = () => {
           <div className="container">
              <Typography className="title" variant={"h3"}>{t('menu.products')}</Typography>
 
-             <Grid container spacing={5}>
-                <Grid item xs={3}>
+             <Grid container spacing={{md: 5, xs: 2}}>
+                <Grid item md={3} xs={12}>
                    <Tabs
-                       orientation="vertical"
-                       variant="standard"
+                       orientation={isLaptop ? "vertical" : 'horizontal'}
+                       variant={isLaptop ? "standard" : 'scrollable'}
                        value={+searchParams.get('category') || categories[0].id}
+                       scrollButtons={!isLaptop}
+                       allowScrollButtonsMobile={!isLaptop}
                        onChange={(e, newCategory) => handleChangeCategory(newCategory)}
-                       aria-label="Vertical tabs example"
+                       aria-label="responsive tabs"
                        sx={{borderRight: 1, borderColor: 'divider'}}
                    >
                       {categories.map(el => (
@@ -74,11 +79,11 @@ const ProductsSection = () => {
                       ))}
                    </Tabs>
                 </Grid>
-                <Grid item xs={9}>
+                <Grid item md={9} xs={12}>
                    <Grid container spacing={3}>
                       {products.map(item => (
-                          <Grid key={item.id} item xs={4}>
-                             <ProductCard productType={item}/>
+                          <Grid key={item.id} item md={4} sm={6} xs={12}>
+                             <ProductCard product={item}/>
                           </Grid>
                       ))}
                    </Grid>

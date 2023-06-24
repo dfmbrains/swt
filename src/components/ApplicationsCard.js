@@ -1,5 +1,5 @@
 import React from 'react';
-import {styled, Typography} from "@mui/material";
+import {styled, Typography, useMediaQuery, useTheme} from "@mui/material";
 
 const StyledCard = styled('div')(({bgimage}) => ({
    background: `url(${bgimage})`,
@@ -60,13 +60,16 @@ const StyledCard = styled('div')(({bgimage}) => ({
 }));
 
 const ApplicationsCard = ({application}) => {
+   const theme = useTheme()
+   const isLaptop = useMediaQuery(theme.breakpoints.up("md"));
+
    return (
        <StyledCard bgimage={application.img}>
           <div className={"applicationCardBox"}>
-             <Typography className="applicationCardTitle" variant={"h4"}>{application.title}</Typography>
+             <Typography className="applicationCardTitle" variant={isLaptop ? "h4" : "h3"}>{application.title}</Typography>
 
              <Typography className="applicationCardSubtitle"
-                         variant={"body2"}>{application.subtitle}</Typography>
+                         variant={isLaptop ? "body2" : "h5"}>{application.subtitle}</Typography>
           </div>
        </StyledCard>
    );

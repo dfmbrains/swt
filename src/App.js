@@ -9,6 +9,7 @@ const Services = Loadable(lazy(() => import('./pages/Services')));
 const Contact = Loadable(lazy(() => import('./pages/Contact')));
 const Products = Loadable(lazy(() => import('./pages/Products')));
 const NotFound = Loadable(lazy(() => import('./pages/NotFound')));
+const SearchPage = Loadable(lazy(() => import('./pages/Search')));
 
 function App() {
    const location = useLocation()
@@ -25,6 +26,7 @@ function App() {
              <Route path={"services"} element={<Services/>}/>
              <Route path={"contact"} element={<Contact/>}/>
              <Route path={"products"} element={<Products/>}/>
+             <Route path={"search"} element={<SearchPage/>}/>
           </Route>
 
           <Route path={"*"} element={<NotFound/>}/>

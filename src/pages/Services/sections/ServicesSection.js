@@ -3,7 +3,7 @@ import {StyledSection} from "../../../components/StyledComponents";
 import {Grid, Icon, styled, Typography} from "@mui/material";
 import {useTranslation} from "react-i18next";
 
-const StyledCard = styled('div')(() => ({
+const StyledCard = styled('div')(({theme}) => ({
    padding: "32px",
    boxShadow: "0px 13px 19px rgba(0, 0, 0, 0.07)",
    height: "100%",
@@ -20,6 +20,19 @@ const StyledCard = styled('div')(() => ({
    "& .cardSubtitle": {
       color: "#737373",
       fontWeight: "400",
+   },
+
+
+   [theme.breakpoints.down("sm")]: {
+      padding: "16px 24px",
+
+      "& .icon": {
+         fontSize: 42
+      },
+      "& .cardTitle": {
+         fontWeight: 700,
+         margin: "8px 0 6px"
+      }
    }
 }));
 
@@ -34,9 +47,9 @@ const ServicesSection = () => {
           <div className="container">
              <Typography className="title" variant={"h3"}>{t('menu.services')}</Typography>
 
-             <Grid container spacing={6}>
+             <Grid container spacing={{md: 6, xs: 2}}>
                 {servicesTexts && servicesIcons.map((icon, idx) => (
-                    <Grid key={idx} item xs={4}>
+                    <Grid key={idx} item md={4} xs={12}>
                        <StyledCard>
                           <Icon className={"icon"} color={"primary"}>{icon}</Icon>
 

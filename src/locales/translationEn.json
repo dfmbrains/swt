@@ -2,6 +2,9 @@
   "currentLanguage": "en",
   "menuWord": "Menu",
   "phoneNumber": "Phone number",
+  "searchResults": "Search Results",
+  "min5length": "Must be at least 5 characters",
+  "notFoundTryAgain": "Not found, try again",
   "phoneNumberCopied": "The phone number was copied",
   "placeholders": {
     "email": "Email",

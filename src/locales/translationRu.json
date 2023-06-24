@@ -2,6 +2,9 @@
   "currentLanguage": "ru",
   "menuWord": "Меню",
   "phoneNumber": "Номер телефона",
+  "searchResults": "Результаты поиска",
+  "min5length": "Должно быть не менее 5 символов",
+  "notFoundTryAgain": "Не получилось найти, попробуйте еще раз",
   "phoneNumberCopied": "Номер телефона скопирован",
   "placeholders": {
     "email": "Ваша почта",

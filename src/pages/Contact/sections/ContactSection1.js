@@ -78,8 +78,8 @@ const ContactSection1 = () => {
           <div className="container">
              <Typography className={"title"} variant={"h3"}>{t('sections.getInTouch')}</Typography>
 
-             <Grid container spacing={5} alignItems={"center"}>
-                <StyledGrid item xs={6}>
+             <Grid container spacing={{md: 5, xs: 3}} alignItems={"center"}>
+                <StyledGrid item md={6} xs={12}>
                    <Typography className={"subtitle"} variant={"subtitle1"}>{t(`${tRootKey}.subtitle`)}</Typography>
 
                    <Typography className={"text"}
@@ -109,7 +109,7 @@ const ContactSection1 = () => {
                    </FlexGap10>
                 </StyledGrid>
 
-                <Grid item xs={6}>
+                <Grid item md={6} xs={12}>
                    <Typography className={"formTitle"} variant={"h4"}>{t(`${tRootKey}.forApplication`)}</Typography>
 
                    <StyledForm onSubmit={handleSubmitForm}>

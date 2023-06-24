@@ -111,7 +111,7 @@ const Burger = ({isOpen, handleClose}) => {
                    </FlexBetweenAlignCenter>
 
                    <Box my={4}>
-                      <Search variant={"outlined"}/>
+                      <Search handleCloseBurger={handleClose} variant={"outlined"}/>
                    </Box>
 
                    <Typography mb={2} pb={1} sx={{borderBottom: `3px solid ${theme.palette.primary.light}`}}

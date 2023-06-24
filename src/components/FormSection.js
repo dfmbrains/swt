@@ -6,7 +6,7 @@ import {useTranslation} from "react-i18next";
 import emailjs from "@emailjs/browser";
 import {EMAIL_JS_PUBLIC_KEY, EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID_FOR_EMAIL} from "../helpers/constants";
 
-const StyledBox = styled(StyledSection)(() => ({
+const StyledBox = styled(StyledSection)(({theme}) => ({
    margin: "30px 0 0",
    padding: "70px 0",
    background: "#F7F7F7",
@@ -18,6 +18,10 @@ const StyledBox = styled(StyledSection)(() => ({
    "& .subtitle": {
       textAlign: "center",
       margin: "0 0 32px",
+   },
+
+   [theme.breakpoints.down("sm")]: {
+      padding: "50px 0",
    }
 }));
 

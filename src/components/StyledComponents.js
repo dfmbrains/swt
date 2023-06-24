@@ -22,9 +22,13 @@ const StyledSection = styled('section')(({theme}) => ({
    }
 }));
 
-const PaginationBox = styled(FlexBox)(() => ({
+const PaginationBox = styled(FlexBox)(({theme}) => ({
    margin: "40px 0 0",
-   justifyContent: "flex-end"
+   justifyContent: "flex-end",
+
+   [theme.breakpoints.down("sm")]: {
+      margin: "30px 0 0",
+   }
 }));
 
 export {StyledSection, PaginationBox};

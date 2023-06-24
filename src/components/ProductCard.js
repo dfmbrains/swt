@@ -67,7 +67,7 @@ const StyledCard = styled('div')(({theme}) => ({
    }
 }));
 
-const ProductTypeCard = ({productType}) => {
+const ProductTypeCard = ({product}) => {
    const {t} = useTranslation()
 
    const [imageLoading, setImageLoading] = useState(true)
@@ -76,7 +76,7 @@ const ProductTypeCard = ({productType}) => {
    const [isHovered, setIsHovered] = useState(false)
 
    const handleCopy = () => {
-      navigator.clipboard.writeText(productType.model)
+      navigator.clipboard.writeText(product.model)
           .then(() => setIsCopied(true))
    }
 
@@ -88,7 +88,7 @@ const ProductTypeCard = ({productType}) => {
 
    return (
        <StyledCard onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-          <Typography className="productCardModel" variant={"body1"}>{productType.model}</Typography>
+          <Typography className="productCardModel" variant={"body1"}>{product.model}</Typography>
           <div className="productCardCopy">
              <Tooltip placement={"top"} title={t(isCopied ? "modelCopied" : "copyModel")}>
                 <IconButton color={isCopied ? "success" : "primary"} onClick={handleCopy}>
@@ -98,16 +98,16 @@ const ProductTypeCard = ({productType}) => {
           </div>
 
           <div className="imgBox">
-             <ImageComponent setIsLoading={setImageLoading} src={productType?.image} alt={productType.model}/>
+             <ImageComponent setIsLoading={setImageLoading} src={product?.image} alt={product.model}/>
              {imageLoading && (
                  <CircularProgress className="loading"/>
              )}
           </div>
 
           <Typography className="productCardTitle" variant={"h5"}>
-             {subcategories.find(el => productType.subcategory === el.id).title.ru}
+             {subcategories.find(el => product.subcategory === el.id).title.ru}
           </Typography>
-          <Typography variant={"body1"}>{productType.description}</Typography>
+          <Typography variant={"body1"}>{product.description}</Typography>
        </StyledCard>
    );
 };

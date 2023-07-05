@@ -7,6 +7,7 @@ const StyledCard = styled('div')(({theme}) => ({
    background: "#FFFFFF",
    border: "1px solid rgba(57, 115, 185, 0.3)",
    borderRadius: 12,
+   height: "100%",
    transition: "0.15s",
    "&:hover": {
       borderColor: theme.palette.primary.main,

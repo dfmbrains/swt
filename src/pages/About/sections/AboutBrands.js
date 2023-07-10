@@ -26,7 +26,7 @@ const AboutBrands = () => {
    return (
        <StyledSection>
           <div className="container">
-             <Typography className="title" variant={"h3"}>{t('sections.brands')}</Typography>
+             <Typography className="title" variant={"h3"}>{t('withBrands')}</Typography>
              <StyledUl mb={{md: 4, xs: 2}} sx={{width: {md: "70%", xs: "100%"}}}>
                 {partnerText.map((part, idx) => (
                     <li>

@@ -11,7 +11,7 @@ const HomeProducts = () => {
    return (
        <StyledSection>
           <div className="container">
-             <Typography className="title" variant={"h3"}>{t('sections.products')}</Typography>
+             <Typography className="title" variant={"h3"}>{t('items')}</Typography>
 
              <Grid container spacing={2}>
                 {productTypes.map((item, idx) => (

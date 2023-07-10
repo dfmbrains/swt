@@ -8,7 +8,6 @@ const StyledCard = styled('div')(({bgimage}) => ({
    backgroundRepeat: "no-repeat",
    position: "relative",
    borderRadius: 12,
-   cursor: "pointer",
 
    "&:hover": {
       "&:before": {

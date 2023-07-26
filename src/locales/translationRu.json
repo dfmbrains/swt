@@ -23,7 +23,7 @@
   "menu": {
     "home": "Главная",
     "aboutUs": "О нас",
-    "products": "Продукты",
+    "products": "Товары",
     "services": "Услуги",
     "contacts": "Контакты"
   },
@@ -33,7 +33,8 @@
     "aboutUs": "О нас",
     "brands": "Бренды",
     "ourBenefits": "Наши преимущества",
-    "products": "Продукты",
+    "products": "Товарные наименования",
+    "productsNames": "Товарные наименования",
     "applications": "Применения",
     "ourStorage": "Наш склад",
     "whyUs": "Почему мы?",

@@ -60,7 +60,7 @@ const ProductsSection = () => {
    return (
        <StyledSection>
           <div className="container">
-             <Typography className="title" variant={"h3"}>{t('menu.products')}</Typography>
+             <Typography className="title" variant={"h3"}>{t('sections.productsNames')}</Typography>
 
              <Grid container spacing={{md: 5, xs: 2}}>
                 <Grid item md={3} xs={12}>

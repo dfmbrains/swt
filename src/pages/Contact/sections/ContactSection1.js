@@ -23,9 +23,6 @@ const StyledBox = styled(StyledSection)(() => ({
 }));
 
 const StyledGrid = styled(Grid)(() => ({
-   "& .subtitle": {
-      marginBottom: "40px"
-   },
    "& .text": {
       color: "#737373",
    },
@@ -80,8 +77,6 @@ const ContactSection1 = () => {
 
              <Grid container spacing={{md: 5, xs: 3}} alignItems={"center"}>
                 <StyledGrid item md={6} xs={12}>
-                   <Typography className={"subtitle"} variant={"subtitle1"}>{t(`${tRootKey}.subtitle`)}</Typography>
-
                    <Typography className={"text"}
                                variant={"h6"}>{t(`${tRootKey}.ourLocation`)}:</Typography>
                    <FlexGap10 className={"contactRow"}>

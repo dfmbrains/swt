@@ -83,7 +83,7 @@ const Header = () => {
                              <StyledMenu>
                                 {menu.map((item, idx) => (
                                     <NavLink key={idx} className="item" to={item.link}>
-                                       <Typography variant={"subtitle1"}>{t(item.title)}</Typography>
+                                       <Typography variant={"h5"}>{t(item.title)}</Typography>
                                     </NavLink>
                                 ))}
                              </StyledMenu>
